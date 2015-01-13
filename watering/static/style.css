@@ -1,0 +1,188 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: #a7a09a;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0 0 1em;
+}
+
+#wrap {
+    width: 950px;
+    margin: 0 auto;
+    background: #99c;
+}
+
+#header {
+    padding: 5px 10px;
+    background: #ddd;
+}
+
+#nav {
+    background: #c99;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    float: left;
+    width: 580px;
+    padding: 10px;
+    background: #9c9;
+}
+
+#sidebar {
+    float: right;
+    width: 330px;
+    padding: 10px;
+    background: #99c;
+}
+
+#footer {
+    clear: both;
+    padding: 5px 10px;
+    background: #cc9;
+}
+
+#footer p {
+    margin: 0;
+}
+/*Table*/
+.tableHead{
+/*border:solid 1px red;*/
+    white-space:nowrap;
+}
+
+td.tableHead > div{
+/*border:solid 1px green;*/
+    display:inline-block;
+}
+
+/*Buttons*/
+.btn_blue {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn_blue:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.btn_red {
+  background: #ff2121;
+  background-image: -webkit-linear-gradient(top, #ff2121, #e30000);
+  background-image: -moz-linear-gradient(top, #ff2121, #e30000);
+  background-image: -ms-linear-gradient(top, #ff2121, #e30000);
+  background-image: -o-linear-gradient(top, #ff2121, #e30000);
+  background-image: linear-gradient(to bottom, #ff2121, #e30000);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_red:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/*Forms for detail views of objects*/
+
+form.cmxform fieldset {
+    margin-bottom: 10px;
+}
+
+form.cmxform legend {
+    padding: 0 2px;
+    font-weight: bold;
+}
+
+form.cmxform label {
+    display: inline-block;
+    line-height: 1.8;
+    vertical-align: top;
+}
+
+form.cmxform fieldset ol {
+    margin: 0;
+    padding: 0;
+}
+
+form.cmxform fieldset li {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+form.cmxform fieldset fieldset {
+    border: none;
+    margin: 3px 0 0;
+}
+
+form.cmxform fieldset fieldset legend {
+    padding: 0 0 5px;
+    font-weight: normal;
+}
+
+form.cmxform fieldset fieldset label {
+    display: block;
+    width: auto;
+}
+
+form.cmxform em {
+    font-weight: bold;
+    font-style: normal;
+    color: #f00;
+}
+
+form.cmxform label {
+    width: 120px; /* Width of labels */
+}
+
+form.cmxform fieldset fieldset label {
+    margin-left: 123px; /* Width plus 3 (html space) */
+}

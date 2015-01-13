@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}My amazing site{% endblock %}</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "style.css" %}" type="text/css"/>
+    <script src="{{ STATIC_URL }}jquery-1.11.1.js"></script>
+    {% block code %}
+    {% endblock code %}
+</head>
+<body>
+<div id="wrap">
+    <div id="header"><h1> {% block header %} Document Heading {% endblock %} </h1></div>
+    <div id="nav">
+        <ul>
+            <li><a href="{% url "main" %}">Main page</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        {% block main %}
+            <h2>Column 1</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+        {% endblock %}
+    </div>
+    <div id="sidebar">
+        {% block sidebar %}
+            <h2>Column 2</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                ...
+            </ul>
+        {% endblock %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+            <p>Footer</p>
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

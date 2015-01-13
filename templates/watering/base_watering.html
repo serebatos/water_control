@@ -1,0 +1,88 @@
+{% extends "watering/base.html" %}
+{% block code %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input[type='button'][id*='cmd']").click(function () {
+                var id = $(this).attr("id").substring($(this).attr("id").lastIndexOf("_") + 1);
+                var c = $(this).attr("name");
+                {% comment %} $.ajax({
+                     url: "branch/" + id + "/" + c,
+                     type: "GET"
+                 });{% endcomment %}
+                window.location.href = "branch/" + id + "/" + c;
+                return true;
+            });
+            $("input[type='button'][id*='cmd']").each(function (index) {
+                var id = $(this).attr("id").substring($(this).attr("id").lastIndexOf("_") + 1);
+                var selector = '#stat_' + id
+                var stat = $(selector).val()
+                var start = $('#cmd_start_' + id)
+                var stop = $('#cmd_stop_' + id)
+
+                if ((stat == 'run') || (stat == 'plan')) {
+                    start.prop('disabled', true);
+                    stop.prop('disabled', false);
+                } else if ((stat == 'stop') || (stat == 'not init')) {
+                    start.prop('disabled', false);
+                    stop.prop('disabled', true);
+                }
+            });
+        });
+    </script>
+{% endblock %}
+{% block header %} {{ title }} {% endblock %}
+{% block main %}
+    <table>
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Полив</th>
+            <th>Состояние</th>
+            <th>Время запуска</th>
+            <th>Команды</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for branch in result %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td><a href="{{ MEDIA_URL }}branch/{{ branch.id }}">{{ branch.descr }}</a></td>
+                <td>{{ branch.status }}</td>
+                <td>{{ branch.t_start }}</td>
+                <td class="tableHead">
+                    <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
+                    <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
+                    {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
+                    <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
+                    {#                    <div class="btn_red" name="stop" id="cmd_stop_{{ branch.id }}">Stop</div>#}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+{% block sidebar %}
+    <h2>Инфо</h2>
+    <p></p>
+    {% if temp_result %}
+        <table>
+            <thead>
+            <tr>
+                <th>Датчик</th>
+                <th>°C</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for temp in temp_result %}
+                <tr>
+                    <td><a href="{{ MEDIA_URL }}temp/{{ temp.id }}">{{ temp.descr }}</a></td>
+                    <td>{{ temp.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h3>No data from temperature sensors</h3>
+    {% endif %}
+{% endblock %}

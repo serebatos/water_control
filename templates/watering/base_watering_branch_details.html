@@ -1,0 +1,36 @@
+{% extends "watering/base_watering.html" %}
+{% block header %}
+    This is my app. It uses Django templates
+{% endblock %}
+{% block main %}
+    <form class="cmxform" action="save" method="post">
+     {% csrf_token %}
+        <fieldset>
+            <legend>{{ branch.descr }}</legend>
+            <ol>
+                <li>
+                    <label for="id_status">Status</label>
+                    <input id="id_status"  type="text" value="{{ branch.status }}" readonly="true"/>
+                </li>
+                <li>
+                    <label for="id_descr">Description</label>
+                    <input id="id_descr" name="descr" value="{{ branch.descr}}" type="text"/>
+                </li>
+                <li>
+                    <label for="id_last_accessed">Last accessed</label>
+                    <input id="id_last_accessed" value="{{ branch.last_accessed }}"/>
+                </li>
+                <li>
+                    <label for="id_t_start">Planned start time</label>
+                    <input id="id_t_start" value="{{ branch.t_start }}"/>
+                </li>
+                <li>
+                    <label for="id_duration">Duration,min</label>
+                    <input id="id_duration" name='duration' value="{{ branch.duration }}" type="text"/>
+                </li>
+            </ol>
+        </fieldset>
+     <input type="submit" value="Submit"/>
+    </form>
+
+{% endblock %}
