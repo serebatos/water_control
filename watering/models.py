@@ -26,7 +26,8 @@ class Status(models.Model):
 class Branch(models.Model):
     descr = models.CharField(max_length=30)
     status = models.ForeignKey(Status)
-    t_start = models.TimeField(null=True, blank=True)
+    t_start_plan = models.TimeField(null=True, blank=True)
+    t_start_fact = models.TimeField(null=True, blank=True)
     # equals t_start + duration and must be set when start and be clean up when finish
     t_end_plan = models.TimeField(null=True, blank=True)
     # must be set when real stop occurs
