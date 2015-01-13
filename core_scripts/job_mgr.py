@@ -9,5 +9,5 @@ for i in range(1, 2):
     job = Job()
     print(i)
     job.init()
-    job.run()
+    job.execute()
     time.sleep(1)

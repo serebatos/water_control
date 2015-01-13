@@ -48,7 +48,7 @@
                 <td>{{ forloop.counter }}</td>
                 <td><a href="{{ MEDIA_URL }}branch/{{ branch.id }}">{{ branch.descr }}</a></td>
                 <td>{{ branch.status }}</td>
-                <td>{{ branch.t_start }}</td>
+                <td>{{ branch.t_start_plan }}</td>
                 <td class="tableHead">
                     <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
                     <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
