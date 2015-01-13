@@ -109,16 +109,16 @@ LOGGING = {
         },
     },
     'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'propagate': True,
-            'level': 'DEBUG',
-        },
-        'h_ctrl': {
+        # 'django': {
+        #     'handlers': ['file'],
+        #     'propagate': True,
+        #     'level': 'DEBUG',
+        # },
+        'watering': {
             'handlers': ['console'],
             'level': 'DEBUG',
         },
-        'job': {
+        'core_scripts.job': {
             'handlers': ['console'],
             'level': 'DEBUG',
         },
