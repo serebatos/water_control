@@ -28,30 +28,36 @@ class Job():
     logger = logging.getLogger(__name__)
     started_branches = []
     running_branches = []
+    allowed_interval_min = 5
+    allowed_interval = None
 
     def init(self):
-        self.logger.info('reading branches')
+        # self.logger.info('reading branches')
         planned = Status.objects.get(name=Job.STATUS_PLANNED)
         running = Status.objects.get(name=Job.STATUS_RUNNING)
         self.started_branches = Branch.objects.filter(status=planned.id)
         self.running_branches = Branch.objects.filter(status=running.id)
-        self.logger.info('initialized')
+        self.allowed_interval = datetime.timedelta(minutes=self.allowed_interval_min)
+        # self.logger.info('initialized')
 
     def execute(self):
-        self.logger.info('checking branches which are planned')
+        # self.logger.info('checking branches which are planned')
         branches_to_run = []
         branches_to_stop = []
         for started_branch in self.started_branches:
             t_curr = datetime.datetime.now()
-            need_to_run = t_curr.time() > started_branch.t_start_plan
-            self.logger.info("%s: current(%s)>branch_tstart(%s):%s", started_branch.descr, t_curr.time(),
-                             started_branch.t_start_plan,
-                             need_to_run)
-            if need_to_run:
+            time_is_come = t_curr.time() > started_branch.t_start_plan
+            t_delta = datetime.datetime.combine(t_curr.date(), t_curr.time()) - datetime.datetime.combine(t_curr.date(),
+                                                                                                          started_branch.t_start_plan)
+            interval_is_allowed = t_delta < self.allowed_interval
+            if time_is_come and interval_is_allowed:
+                self.logger.info("%s: current(%s)>branch_tstart(%s)", started_branch.descr, t_curr.time(),
+                                 started_branch.t_start_plan)
                 branches_to_run.append(started_branch)
+
         self.run_branch(branches_to_run)
 
-        self.logger.info('checking branches which are running')
+        # self.logger.info('checking branches which are running')
         for running_branch in self.running_branches:
             t_curr = datetime.datetime.now()
             need_to_end = t_curr.time() > running_branch.t_end_plan
@@ -62,8 +68,8 @@ class Job():
                 branches_to_stop.append(running_branch)
         self.end_branch(branches_to_stop)
 
-        if not branches_to_run and not branches_to_stop:
-            self.logger.info("Nothing to stop/start!")
+        # if not branches_to_run and not branches_to_stop:
+            # self.logger.info("Nothing to stop/start!")
 
 
     # from PLANNED state to RUNNING
