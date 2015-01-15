@@ -1,9 +1,6 @@
 import time
-
 from core_scripts.job import Job
-
 __author__ = 'bonecrusher'
-
 
 for i in range(1, 2000):
     job = Job()
@@ -11,3 +8,4 @@ for i in range(1, 2000):
     job.init()
     job.execute()
     time.sleep(10)
+
