@@ -72,6 +72,7 @@ class BranchForm(UpdateView):
 # Команды для ветки
 class CommandView(RedirectView):
     pattern_name = 'main'
+    permanent = True
 
     def get_redirect_url(self, *args, **kwargs):
         branch = get_object_or_404(Branch, pk=kwargs['pk'])

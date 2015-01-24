@@ -17,7 +17,7 @@ def processCommand(i, q):
 
         # instead of really downloading the URL,
         # we just pretend and sleep
-        # time.sleep(i + 2)
+        time.sleep(i + 2)
         q.task_done()
 
 
@@ -25,6 +25,8 @@ worker = Thread(target=processCommand, args=(1, command_queue))
 worker.setDaemon(True)
 worker.start()
 
+
+#todo: instead of stub below start listening port for JSON message, then construct Command and put it in queue
 for i in range(1, 10):
     cmd = Command(Command.CMD_SET, i)
     command_queue.put(cmd)
