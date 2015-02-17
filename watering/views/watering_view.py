@@ -75,14 +75,14 @@ class CommandView(RedirectView):
     permanent = True
 
     def get_redirect_url(self, *args, **kwargs):
+        # ищем ветку
         branch = get_object_or_404(Branch, pk=kwargs['pk'])
+        # по команде ищем статус из БД
         cmd = kwargs['cmd']
         stat = None
         if cmd == 'start':
-            # todo: Replace pk=3
             stat = Status.objects.get(name=Job.STATUS_PLANNED)
         elif cmd == 'stop':
-            # todo: Replace pk=4
             stat = Status.objects.get(name=Job.STATUS_STOPPED)
         if stat:
             branch.status = stat
