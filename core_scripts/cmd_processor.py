@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import json
-import time
 import socket
 import sys
 from core_scripts.command import Command
@@ -21,7 +20,7 @@ def processCommand(q):
         i = 2
         command = q.get()
         print('%s Processing: %s, value: %s' % (time.time(), command.name, command.value))
-
+        # todo: Execute actual command
         # instead of really downloading the URL,
         # we just pretend and sleep
         print('sleep for %s' % i)

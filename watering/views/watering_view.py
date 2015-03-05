@@ -4,7 +4,9 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.views.generic import TemplateView, DetailView, RedirectView, FormView, UpdateView
-from core_scripts.job import Job
+from core_scripts.cmd_client import CommandSender
+from core_scripts.command import Command
+from core_scripts.job_manager import JobManager
 from ..models import Branch, Status, Device
 from ..temp_mon import *
 
@@ -48,13 +50,14 @@ class BranchDetail(DetailView, UpdateView):
     model = Branch
     context_object_name = 'branch'
     template_name = "watering/base_watering_branch_details.html"
-    fields = ['descr', 'duration']
+    fields = ['descr', 't_start_plan', 'duration']
 
     def get_object(self):
         object = super(BranchDetail, self).get_object()
         object.last_accessed = timezone.now()
         object.save()
         return object
+
 
 
 class BranchForm(UpdateView):
@@ -80,14 +83,24 @@ class CommandView(RedirectView):
         # по команде ищем статус из БД
         cmd = kwargs['cmd']
         stat = None
+
         if cmd == 'start':
-            stat = Status.objects.get(name=Job.STATUS_PLANNED)
+            stat = Status.objects.get(name=JobManager.STATUS_PLANNED)
         elif cmd == 'stop':
-            stat = Status.objects.get(name=Job.STATUS_STOPPED)
+            stat = Status.objects.get(name=JobManager.STATUS_STOPPED)
+        elif cmd == 'on':
+            stat = Status.objects.get(name=JobManager.STATUS_RUNNING)
+            CommandSender.send(Command.CMD_SET, branch.leg)
+        elif cmd == 'off':
+            stat = Status.objects.get(name=JobManager.STATUS_STOPPED)
+            CommandSender.send(Command.CMD_UNSET, branch.leg)
+
         if stat:
             branch.status = stat
             branch.save()
         return reverse(self.pattern_name)
+
+
 
 
 

@@ -14,6 +14,7 @@ class Device(models.Model):
     def get_absolute_url(self):
         return reverse('temp-detail', kwargs={'pk': self.pk})
 
+
 # todo: Creation of default values for statuses
 class Status(models.Model):
     name = models.CharField(max_length=15)
@@ -24,6 +25,7 @@ class Status(models.Model):
 
 
 class Branch(models.Model):
+    leg = models.IntegerField(default=-1,max_length=2)
     descr = models.CharField(max_length=30)
     status = models.ForeignKey(Status)
     t_start_plan = models.TimeField(null=True, blank=True)

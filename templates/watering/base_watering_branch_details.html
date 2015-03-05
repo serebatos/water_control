@@ -4,17 +4,17 @@
 {% endblock %}
 {% block main %}
     <form class="cmxform" action="save" method="post">
-     {% csrf_token %}
+        {% csrf_token %}
         <fieldset>
             <legend>{{ branch.descr }}</legend>
             <ol>
                 <li>
                     <label for="id_status">Status</label>
-                    <input id="id_status"  type="text" value="{{ branch.status }}" readonly="true"/>
+                    <input id="id_status" type="text" value="{{ branch.status }}" readonly="true"/>
                 </li>
                 <li>
                     <label for="id_descr">Description</label>
-                    <input id="id_descr" name="descr" value="{{ branch.descr}}" type="text"/>
+                    <input id="id_descr" name="descr" value="{{ branch.descr }}" type="text"/>
                 </li>
                 <li>
                     <label for="id_last_accessed">Last accessed</label>
@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <label for="id_t_start">Planned start time</label>
-                    <input id="id_t_start" value="{{ branch.t_start_plan }}"/>
+                    <input id="id_t_start" value="{{ branch.t_start_plan }}" type="time"/>
                 </li>
                 <li>
                     <label for="id_duration">Duration,min</label>
@@ -30,7 +30,7 @@
                 </li>
             </ol>
         </fieldset>
-     <input type="submit" value="Submit"/>
+        <input type="submit" value="Submit"/>
     </form>
 
 {% endblock %}

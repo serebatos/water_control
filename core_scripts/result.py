@@ -14,4 +14,4 @@ class Result(object):
 
     @staticmethod
     def get_leg_switch_ok():
-        return '{"operation":"leg switch", "result":"ok"}'
+        return '{"operation":"leg switch", "result":"OK"}'

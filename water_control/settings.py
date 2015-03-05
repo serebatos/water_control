@@ -118,8 +118,8 @@ LOGGING = {
             'handlers': ['console'],
             'level': 'DEBUG',
         },
-        'core_scripts.job': {
-            'handlers': ['console'],
+        'core_scripts': {
+            'handlers': ['console', 'file'],
             'level': 'DEBUG',
         },
 
