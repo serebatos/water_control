@@ -2,8 +2,10 @@
 import json
 import socket
 import sys
-from core_scripts.command import Command
-from core_scripts.result import Result
+import RPi.GPIO as GPIO
+
+from command import Command
+from result import Result
 
 __author__ = 'reprintsevsv'
 from Queue import Queue
@@ -21,7 +23,16 @@ def processCommand(q):
         command = q.get()
         print('%s Processing: %s, value: %s' % (time.time(), command.name, command.value))
         # todo: Execute actual command
-        # instead of really downloading the URL,
+        pin = int(command.value)
+        if Command.CMD_SET == command.name:
+
+            GPIO.setup(pin, GPIO.OUT)
+            GPIO.output(pin, GPIO.HIGH)
+            print("leg was set to HIGH OUT")
+        elif Command.CMD_UNSET == command.name:
+            GPIO.setup(pin, GPIO.IN)
+            print("leg was set to IN")
+
         # we just pretend and sleep
         print('sleep for %s' % i)
         time.sleep(i)
@@ -32,6 +43,9 @@ worker = Thread(target=processCommand, args=[command_queue])
 worker.setDaemon(True)
 worker.start()
 
+# setup GPIO
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

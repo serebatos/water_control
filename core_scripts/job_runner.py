@@ -1,5 +1,5 @@
 import time
-from core_scripts.job_manager import JobManager
+from job_manager import JobManager
 __author__ = 'bonecrusher'
 
 for i in range(1, 2000):

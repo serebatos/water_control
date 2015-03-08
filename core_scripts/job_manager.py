@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import datetime
-from core_scripts.cmd_client import CommandSender
-from core_scripts.command import Command
+from cmd_client import CommandSender
+from command import Command
 
 __author__ = 'bonecrusher'
 

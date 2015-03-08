@@ -1,7 +1,6 @@
 import json
 import logging
-from core_scripts.command import Command
-from core_scripts.result import Result
+from result import Result
 
 __author__ = 'bonecrusher'
 import socket
