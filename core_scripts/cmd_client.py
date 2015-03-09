@@ -17,13 +17,14 @@ class CommandSender():
 
         # Connect the socket to the port where the server is listening
         server_address = ('localhost', 10000)
-        print >> sys.stderr, 'connecting to %s port %s' % server_address
-        sock.connect(server_address)
+        CommandSender.logger.info('---------------------------------')
+        CommandSender.logger.info('Connecting to %s', server_address)
 
         try:
+            sock.connect(server_address)
             # Send data
             j = '{"name":"' + command + '", "value": "' + str(leg) + '"}'
-            print >> sys.stderr, 'sending (%s)' % j
+            CommandSender.logger.info('Sending command (%s)', j)
             # sock.sendall(json.dumps(j))
             sock.sendall(j)
 
@@ -31,53 +32,54 @@ class CommandSender():
             amount_received = 0
 
             data = sock.recv(100).strip()
-            print >> sys.stderr, "Raw data:", data
+            CommandSender.logger.info("Got answer, raw data '%s'", data)
             response = json.loads(data)
-            print >> sys.stderr, "1 Json loads: ", response
             response = json.loads(data)
-            print >> sys.stderr, "2 Json loads: ", response
             amount_received += len(response)
-            print >> sys.stderr, "Response length: ", amount_received
+            CommandSender.logger.info("Response '%s'", response)
+            CommandSender.logger.info("Response length is %s", amount_received)
 
             res = Result(response)
-            print >> sys.stderr, 'received "%s is %s"' % (res.operation, res.result)
+            CommandSender.logger.info('Received "%s is %s"', res.operation, res.result)
 
+        except Exception, err:
+            CommandSender.logger.exception(str(err))
         finally:
-            print >> sys.stderr, 'closing socket'
+            # print >> sys.stderr, 'closing socket'
             sock.close()
         return res
 
-# Create a TCP/IP socket
-# sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # Create a TCP/IP socket
+        # sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Connect the socket to the port where the server is listening
-# server_address = ('localhost', 10000)
-# print >> sys.stderr, 'connecting to %s port %s' % server_address
-# sock.connect(server_address)
+        # Connect the socket to the port where the server is listening
+        # server_address = ('localhost', 10000)
+        # print >> sys.stderr, 'connecting to %s port %s' % server_address
+        # sock.connect(server_address)
 
-# try:
+        # try:
 
-    # Send data
-    # j = '{"name":"' + Command.CMD_SET + '", "value": "1"}'
-    # print >> sys.stderr, 'sending (%s)' % j
-    # sock.sendall(json.dumps(j))
-    # sock.sendall(j)
+        # Send data
+        # j = '{"name":"' + Command.CMD_SET + '", "value": "1"}'
+        # print >> sys.stderr, 'sending (%s)' % j
+        # sock.sendall(json.dumps(j))
+        # sock.sendall(j)
 
-    # Look for the response
-    # amount_received = 0
+        # Look for the response
+        # amount_received = 0
 
-    # data = sock.recv(100).strip()
-    # print >> sys.stderr, "Raw data:", data
-    # response = json.loads(data)
-    # print >> sys.stderr, "1 Json loads: ", response
-    # response = json.loads(data)
-    # print >> sys.stderr, "2 Json loads: ", response
-    # amount_received += len(response)
-    # print >> sys.stderr, "Response length: ", amount_received
-    #
-    # res = Result(response)
-    # print >> sys.stderr, 'received "%s is %s"' % (res.operation, res.result)
-#
-# finally:
-#     print >> sys.stderr, 'closing socket'
-#     sock.close()
+        # data = sock.recv(100).strip()
+        # print >> sys.stderr, "Raw data:", data
+        # response = json.loads(data)
+        # print >> sys.stderr, "1 Json loads: ", response
+        # response = json.loads(data)
+        # print >> sys.stderr, "2 Json loads: ", response
+        # amount_received += len(response)
+        # print >> sys.stderr, "Response length: ", amount_received
+        #
+        # res = Result(response)
+        # print >> sys.stderr, 'received "%s is %s"' % (res.operation, res.result)
+        #
+        # finally:
+        # print >> sys.stderr, 'closing socket'
+        # sock.close()

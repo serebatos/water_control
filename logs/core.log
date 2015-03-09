@@ -1,0 +1,155 @@
+[09/Mar/2015 19:17:09] INFO [core_scripts.cmd_client:20] Connecting to ('localhost', 10000)
+[09/Mar/2015 19:17:09] INFO [core_scripts.cmd_client:26] Sending command ({"name":"leg up", "value": "7"})
+[09/Mar/2015 19:17:09] INFO [core_scripts.cmd_client:34] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 19:17:09] INFO [core_scripts.cmd_client:38] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 19:17:09] INFO [core_scripts.cmd_client:39] Response length is 41
+[09/Mar/2015 19:17:10] INFO [core_scripts.cmd_client:20] Connecting to ('localhost', 10000)
+[09/Mar/2015 19:17:10] INFO [core_scripts.cmd_client:26] Sending command ({"name":"leg down", "value": "7"})
+[09/Mar/2015 19:17:10] INFO [core_scripts.cmd_client:34] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 19:17:10] INFO [core_scripts.cmd_client:38] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 19:17:10] INFO [core_scripts.cmd_client:39] Response length is 41
+[09/Mar/2015 19:18:44] INFO [core_scripts.cmd_client:20] Connecting to ('localhost', 10000)
+[09/Mar/2015 19:18:44] INFO [core_scripts.cmd_client:26] Sending command ({"name":"leg up", "value": "6"})
+[09/Mar/2015 19:18:44] INFO [core_scripts.cmd_client:34] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 19:18:44] INFO [core_scripts.cmd_client:38] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 19:18:44] INFO [core_scripts.cmd_client:39] Response length is 41
+[09/Mar/2015 19:18:44] INFO [core_scripts.cmd_client:42] Received "leg switch is OK"
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "4"})
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 19:19:54] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "4"})
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 19:19:55] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:01:05] INFO [job_manager:40] reading branches
+[09/Mar/2015 20:01:15] INFO [job_manager:40] reading branches
+[09/Mar/2015 20:01:25] INFO [job_manager:40] reading branches
+[09/Mar/2015 20:01:35] INFO [job_manager:40] reading branches
+[09/Mar/2015 20:15:22] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:15:22] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:15:41] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:15:41] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:15:41] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "9"})
+[09/Mar/2015 20:16:51] INFO [cmd_processor:79] 1:connection from ('127.0.0.1', 35224)
+[09/Mar/2015 20:16:51] INFO [cmd_processor:84] Received "{"name":"leg up", "value": "9"}"
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 20:16:51] INFO [cmd_processor:39] 1425932211.53 Processing: leg up, value: 9
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 20:16:51] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 20:16:51] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:16:51] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:16:54] INFO [cmd_processor:79] 2:connection from ('127.0.0.1', 35226)
+[09/Mar/2015 20:16:54] INFO [cmd_processor:84] Received "{"name":"leg down", "value": "9"}"
+[09/Mar/2015 20:16:54] INFO [cmd_processor:39] 1425932214.8 Processing: leg down, value: 9
+[09/Mar/2015 20:16:54] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:16:54] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "9"})
+[09/Mar/2015 20:16:55] INFO [cmd_processor:79] 3:connection from ('127.0.0.1', 35228)
+[09/Mar/2015 20:16:55] INFO [cmd_processor:84] Received "{"name":"leg down", "value": "9"}"
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 20:16:55] INFO [cmd_processor:39] 1425932215.76 Processing: leg down, value: 9
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 20:16:55] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:16:55] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:16:55] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:17:30] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:17:30] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:17:32] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:17:32] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:17:34] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:17:34] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:17:41] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:17:41] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:17:54] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:17:54] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:17:54] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "6"})
+[09/Mar/2015 20:18:02] INFO [cmd_processor:79] 1:connection from ('127.0.0.1', 35233)
+[09/Mar/2015 20:18:02] INFO [cmd_processor:84] Received "{"name":"leg up", "value": "6"}"
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 20:18:02] INFO [cmd_processor:39] 1425932282.26 Processing: leg up, value: 6
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 20:18:02] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 20:18:02] INFO [cmd_processor:44] Leg 6 was set to HIGH OUT
+[09/Mar/2015 20:18:02] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:18:02] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:18:22] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:18:22] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:18:31] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:18:31] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:18:53] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:18:53] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:19:01] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:19:01] INFO [cmd_processor:65] Starting up on ('localhost', 10000)
+[09/Mar/2015 20:19:01] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "5"})
+[09/Mar/2015 20:19:05] INFO [cmd_processor:79] 1:connection from ('127.0.0.1', 35243)
+[09/Mar/2015 20:19:05] INFO [cmd_processor:84] Received "{"name":"leg up", "value": "5"}"
+[09/Mar/2015 20:19:05] INFO [cmd_processor:87] Command is leg up 5
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 20:19:05] INFO [cmd_processor:39] 1425932345.15 Processing: leg up, value: 5
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 20:19:05] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:19:05] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:19:05] INFO [cmd_processor:44] Leg 5 was set to HIGH OUT
+[09/Mar/2015 20:19:05] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:20:15] INFO [cmd_processor:79] 2:connection from ('127.0.0.1', 35245)
+[09/Mar/2015 20:20:15] INFO [cmd_processor:84] Received "{"name":"leg down", "value": "5"}"
+[09/Mar/2015 20:20:15] INFO [cmd_processor:87] Command is leg down 5
+[09/Mar/2015 20:20:15] INFO [cmd_processor:39] 1425932415.88 Processing: leg down, value: 5
+[09/Mar/2015 20:20:15] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:20:15] INFO [cmd_processor:47] Leg 5 was set to IN
+[09/Mar/2015 20:20:15] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:20:31] ERROR [job_manager:101] And another has EMPTY t_end_plan!
+[09/Mar/2015 20:20:41] ERROR [job_manager:101] And another has EMPTY t_end_plan!
+[09/Mar/2015 20:20:51] ERROR [job_manager:101] And another has EMPTY t_end_plan!
+[09/Mar/2015 20:21:01] ERROR [job_manager:101] And another has EMPTY t_end_plan!
+[09/Mar/2015 20:21:11] ERROR [job_manager:101] And another has EMPTY t_end_plan!
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "5"})
+[09/Mar/2015 20:21:18] INFO [cmd_processor:79] 3:connection from ('127.0.0.1', 35252)
+[09/Mar/2015 20:21:18] INFO [cmd_processor:84] Received "{"name":"leg down", "value": "5"}"
+[09/Mar/2015 20:21:18] INFO [cmd_processor:87] Command is leg down 5
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 20:21:18] INFO [cmd_processor:39] 1425932478.61 Processing: leg down, value: 5
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 20:21:18] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:21:18] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:21:18] INFO [cmd_processor:47] Leg 5 was set to IN
+[09/Mar/2015 20:21:18] DEBUG [cmd_processor:37] Looking for the next command
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:20] ---------------------------------
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "6"})
+[09/Mar/2015 20:21:19] INFO [cmd_processor:79] 4:connection from ('127.0.0.1', 35255)
+[09/Mar/2015 20:21:19] INFO [cmd_processor:84] Received "{"name":"leg down", "value": "6"}"
+[09/Mar/2015 20:21:19] INFO [cmd_processor:87] Command is leg down 6
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"result\":\"OK\"}"'
+[09/Mar/2015 20:21:19] INFO [cmd_processor:39] 1425932479.22 Processing: leg down, value: 6
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "result":"OK"}'
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:40] Response length is 41
+[09/Mar/2015 20:21:19] INFO [cmd_processor:75] Waiting for a connection
+[09/Mar/2015 20:21:19] INFO [cmd_processor:47] Leg 6 was set to IN
+[09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[09/Mar/2015 20:21:19] DEBUG [cmd_processor:37] Looking for the next command

@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -95,23 +96,26 @@ LOGGING = {
         },
     },
     'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'mysite.log',
-            'formatter': 'verbose'
-        },
         'console': {
             'class': 'logging.StreamHandler',
             'formatter': 'simple',
             'level': 'INFO',
             'stream': 'ext://sys.stdout',
         },
+        'myfile': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/home/bonecrusher/PycharmProjects/water_control/logs/core.log',
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 7,
+            'formatter': 'verbose'
+        },
+
     },
     'loggers': {
         # 'django': {
-        #     'handlers': ['file'],
-        #     'propagate': True,
+        # 'handlers': ['file'],
+        # 'propagate': True,
         #     'level': 'DEBUG',
         # },
         'watering': {
@@ -119,9 +123,18 @@ LOGGING = {
             'level': 'DEBUG',
         },
         'core_scripts': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console', 'myfile'],
             'level': 'DEBUG',
         },
+        'job_manager': {
+            'handlers': ['console', 'myfile'],
+            'level': 'DEBUG',
+        },
+        'cmd_processor': {
+            'handlers': ['console', 'myfile'],
+            'level': 'DEBUG',
+        },
+
 
     }
 }
@@ -131,5 +144,5 @@ LOGGING = {
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  'templates'),
+    os.path.join(BASE_DIR, 'templates'),
 )
