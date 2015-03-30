@@ -9,6 +9,7 @@ from core_scripts.command import Command
 from core_scripts.job_manager import JobManager
 from ..models import Branch, Status, Device
 from ..temp_mon import *
+from datetime import datetime
 
 
 __author__ = 'bonecrusher'
@@ -46,11 +47,11 @@ class WateringMain(TemplateView):
 
 
 # Получение детального представления ветки
-class BranchDetail(DetailView, UpdateView):
+class BranchDetail(DetailView):
     model = Branch
     context_object_name = 'branch'
     template_name = "watering/base_watering_branch_details.html"
-    fields = ['descr', 't_start_plan', 'duration']
+
 
     def get_object(self):
         object = super(BranchDetail, self).get_object()
@@ -59,17 +60,23 @@ class BranchDetail(DetailView, UpdateView):
         return object
 
 
+class BranchUpdate(RedirectView):
+    pattern_name = 'main'
+    permanent = True
 
-class BranchForm(UpdateView):
-    model = Branch
-    fields = ['descr']
-    template_name = 'watering/base_watering_branch_details.html'
+    def get_redirect_url(self, *args, **kwargs):
+        # ищем ветку
+        branch = get_object_or_404(Branch, pk=kwargs['pk'])
+        start_plan = self.request.POST['t_start_plan']
+        try:
+            branch.t_start_plan = datetime.strptime(start_plan, "%H:%M").time()
+            branch.save()
+        except:
+            start_plan = start_plan.replace(".", "")
+            branch.t_start_plan = datetime.strptime(start_plan, "%I:%M %p").time()
+            branch.save()
 
-    def form_valid(self, form):
-        return super(BranchForm, self).form_valid(form)
-
-    def get_object(self, queryset=None):
-        return super(BranchForm, self).get_object(queryset)
+        return reverse(self.pattern_name)
 
 
 # Команды для ветки

@@ -1,4 +1,7 @@
 {% extends "watering/base_watering.html" %}
+{% block code %}
+
+{% endblock %}
 {% block header %}
     This is my app. It uses Django templates
 {% endblock %}
@@ -21,8 +24,16 @@
                     <input id="id_last_accessed" value="{{ branch.last_accessed }}"/>
                 </li>
                 <li>
-                    <label for="id_t_start">Planned start time</label>
-                    <input id="id_t_start" value="{{ branch.t_start_plan }}" type="time"/>
+                    <label for="id_t_start">Planned s_time</label>
+
+                    <div class="input-group clockpicker" data-autoclose="true" data-placement="left" data-align="top">
+                        <input id="id_t_start_plan" name="t_start_plan" value="{{ branch.t_start_plan }}"
+                               class="form-control">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                    </div>
+                    {#                    <input id="id_t_start2" value="00:00:01" type="text"/>#}
                 </li>
                 <li>
                     <label for="id_duration">Duration,min</label>
@@ -32,5 +43,12 @@
         </fieldset>
         <input type="submit" value="Submit"/>
     </form>
-
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker();
+        $('.clockpicker').clockpicker()
+                .find('input').change(function () {
+{#                    $('#id_t_start2').val(this.value)#}
+{#                    $('#id_t_start2').value(this.value)#}
+                });
+    </script>
 {% endblock %}

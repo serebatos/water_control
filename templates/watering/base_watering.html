@@ -1,5 +1,41 @@
 {% extends "watering/base.html" %}
 {% block code %}
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages: ["timeline"]});
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var container = document.getElementById('timeline');
+            var chart = new google.visualization.Timeline(container);
+            var dataTable = new google.visualization.DataTable();
+
+            dataTable.addColumn({type: 'string', id: 'Branch'});
+            dataTable.addColumn({type: 'date', id: 'Start'});
+            dataTable.addColumn({type: 'date', id: 'End'});
+            dataTable.addRows([
+                {% for branch in result %}
+                    {% if branch.t_end_plan %}
+                        ['{{ branch.descr }}', new Date(0, 0, 0, {{ branch.t_start_plan|date:"H,i,0"  }}), new Date(0, 0, 0, {{ branch.t_end_plan|date:"H,i,0"  }})],
+                    {% endif %}
+                    {% comment %}['Washington', new Date(1789, 3, 29), new Date(1797, 2, 3)],
+                    ['Adams', new Date(1797, 2, 3), new Date(1801, 2, 3)],
+                    ['Jefferson', new Date(1801, 2, 3), new Date(1809, 2, 3)]]);{% endcomment %}
+                {% endfor %}
+            ]);
+            chart.draw(dataTable);
+        }
+    </script>
+    {% comment %} {id: {{ session.id }}, group: {{ session.user.id }},
+content: '<div class="mystyle"
+               title="c {{ session.sbegin|date:"H:i:s" }} по {{ session.send|date:"H:i:s" }}">{{ session.sduration }} мин.</div>',
+start: '{{ session.sbegin|date:"Y-m-d H:i:s" }}',
+end: '{{ session.send|date:"Y-m-d H:i:s" }}',
+type: 'range', cdata: '{{ session.comment }}',
+from: '{{ session.sbegin|date:"H:i:s" }}',
+to: '{{ session.send|date:"H:i:s" }}'}
+  {% endcomment %}
     <script type="text/javascript">
         $(document).ready(function () {
 
@@ -13,6 +49,7 @@
                 window.location.href = "branch/" + id + "/" + c;
                 return true;
             });
+            {# Disable/Enable buttons due to current Branch status #}
             $("input[type='button'][id*='cmd']").each(function (index) {
                 var id = $(this).attr("id").substring($(this).attr("id").lastIndexOf("_") + 1);
                 var selector = '#stat_' + id
@@ -54,6 +91,7 @@
                 <td>{{ branch.t_end_plan }}</td>
                 <td class="tableHead">
                     <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
+                    <input type="text" value="" name="length" id="len_{{ branch.id }}" size="2"/>
                     <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
                     {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
                     <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
@@ -65,6 +103,7 @@
         {% endfor %}
         </tbody>
     </table>
+    <div id="timeline" style="width: 620px; height: 380px;"></div>
 {% endblock %}
 {% block sidebar %}
     <h2>Инфо</h2>

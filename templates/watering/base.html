@@ -6,7 +6,11 @@
 
     {% load staticfiles %}
     <link rel="stylesheet" href="{% static "style.css" %}" type="text/css"/>
+    <link href="{% static "jquery-ui.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "jquery-clockpicker.css" %}" rel="stylesheet" type="text/css">
     <script src="{{ STATIC_URL }}jquery-1.11.1.js"></script>
+    <script src="{% static "jquery-ui.js" %}"></script>
+    <script src="{% static "jquery-clockpicker.js" %}"></script>
     {% block code %}
     {% endblock code %}
 </head>

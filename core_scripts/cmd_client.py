@@ -19,7 +19,7 @@ class CommandSender():
         server_address = ('localhost', 10000)
         CommandSender.logger.info('---------------------------------')
         CommandSender.logger.info('Connecting to %s', server_address)
-
+        res = None
         try:
             sock.connect(server_address)
             # Send data

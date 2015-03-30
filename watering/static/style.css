@@ -147,6 +147,11 @@ form.cmxform label {
     line-height: 1.8;
     vertical-align: top;
 }
+form.cmxform div {
+    display: inline-block;
+    line-height: 1.8;
+    vertical-align: top;
+}
 
 form.cmxform fieldset ol {
     margin: 0;

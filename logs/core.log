@@ -153,3 +153,39 @@
 [09/Mar/2015 20:21:19] INFO [cmd_processor:47] Leg 6 was set to IN
 [09/Mar/2015 20:21:19] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
 [09/Mar/2015 20:21:19] DEBUG [cmd_processor:37] Looking for the next command
+[29/Mar/2015 20:50:13] INFO [core_scripts.cmd_client:20] ---------------------------------
+[29/Mar/2015 20:50:13] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[29/Mar/2015 20:50:13] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[29/Mar/2015 20:51:08] INFO [core_scripts.cmd_client:20] ---------------------------------
+[29/Mar/2015 20:51:08] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[29/Mar/2015 20:51:08] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[29/Mar/2015 21:29:35] INFO [core_scripts.cmd_client:20] ---------------------------------
+[29/Mar/2015 21:29:35] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[29/Mar/2015 21:29:35] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[29/Mar/2015 21:29:37] INFO [core_scripts.cmd_client:20] ---------------------------------
+[29/Mar/2015 21:29:37] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[29/Mar/2015 21:29:37] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
