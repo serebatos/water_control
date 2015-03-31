@@ -70,39 +70,69 @@ to: '{{ session.send|date:"H:i:s" }}'}
 {% endblock %}
 {% block header %} {{ title }} {% endblock %}
 {% block main %}
-    <table>
-        <thead>
-        <tr>
-            <th>№</th>
-            <th>Полив</th>
-            <th>Состояние</th>
-            <th>Запуск</th>
-            <th>Завершение</th>
-            <th>Управление</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for branch in result %}
+    <form method="POST" action=".">
+        {% csrf_token %}
+        <table>
+            <thead>
+            <tr align="left">
+                <th>№</th>
+                <th>Полив</th>
+                <th>Состояние</th>
+                <th>Запуск</th>
+                <th>Завершение</th>
+                <th>Управление</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for branch in result %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td><a href="{{ MEDIA_URL }}branch/{{ branch.id }}">{{ branch.descr }}</a></td>
+                    <td>{{ branch.status }}</td>
+                    <td>
+                        <div class="input-group clockpicker" data-autoclose="true" data-placement="left"
+                             data-align="top">
+                            <input id="id_t_start_plan_{{ branch.id }}" name="t_start_plan_{{ branch.id }}"
+                                   value="{{ branch.t_start_plan }}"
+                                   size="7">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group clockpicker" data-autoclose="true" data-placement="left"
+                             data-align="top">
+                            <input id="id_t_end_plan_{{ branch.id }}" name="t_end_plan_{{ branch.id }}"
+                                   value="{{ branch.t_end_plan }}"
+                                   size="7">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                        </div>
+                    </td>
+                    <td class="tableHead">
+                        <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
+                        <input type="text" value="{{ branch.duration | default:'0' }}" name="length_{{ branch.id }}"
+                               id="len_{{ branch.id }}" size="2"/>
+                        <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
+                        {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
+                        <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
+                        {#                    <div class="btn_red" name="stop" id="cmd_stop_{{ branch.id }}">Stop</div>#}
+                        <input type="button" name="on" id="cmd_on_{{ branch.id }}" value="Turn on"/>
+                        <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Turn off"/>
+                    </td>
+                </tr>
+            {% endfor %}
             <tr>
-                <td>{{ forloop.counter }}</td>
-                <td><a href="{{ MEDIA_URL }}branch/{{ branch.id }}">{{ branch.descr }}</a></td>
-                <td>{{ branch.status }}</td>
-                <td>{{ branch.t_start_plan }}</td>
-                <td>{{ branch.t_end_plan }}</td>
-                <td class="tableHead">
-                    <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
-                    <input type="text" value="" name="length" id="len_{{ branch.id }}" size="2"/>
-                    <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
-                    {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
-                    <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
-                    {#                    <div class="btn_red" name="stop" id="cmd_stop_{{ branch.id }}">Stop</div>#}
-                    <input type="button" name="on" id="cmd_on_{{ branch.id }}" value="Turn on"/>
-                    <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Turn off"/>
+                <td colspan="6" align="right">
+                    <input type="submit" value="Save">
                 </td>
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+
+    </form>
     <div id="timeline" style="width: 620px; height: 380px;"></div>
 {% endblock %}
 {% block sidebar %}
@@ -129,4 +159,9 @@ to: '{{ session.send|date:"H:i:s" }}'}
     {% else %}
         <h3>No data from temperature sensors</h3>
     {% endif %}
+{% endblock %}
+{% block footer %}
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker();
+    </script>
 {% endblock %}

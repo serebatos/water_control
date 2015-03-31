@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django import forms
+from django.http import HttpResponse
 from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
@@ -9,7 +10,8 @@ from core_scripts.command import Command
 from core_scripts.job_manager import JobManager
 from ..models import Branch, Status, Device
 from ..temp_mon import *
-from datetime import datetime
+from datetime import datetime, date
+from django.shortcuts import render
 
 
 __author__ = 'bonecrusher'
@@ -19,6 +21,31 @@ __author__ = 'bonecrusher'
 class WateringMain(TemplateView):
     template_name = "watering/base_watering.html"
 
+    def get_time(self, str_time):
+        try:
+            res_time = datetime.strptime(str_time, "%H:%M").time()
+        except:
+            str_time = str_time.replace(".", "")
+            res_time = datetime.strptime(str_time, "%I:%M %p").time()
+        return res_time
+
+    def post(self, request):
+        post_data = request.POST
+        branches = Branch.objects.all()
+        for b in branches:
+            id = str(b.id)
+            key = 't_start_plan_' + id
+            t_start = post_data[key]
+            t_end = post_data['t_end_plan_' + id]
+            len = post_data['length_' + id]
+            b.t_start_plan = self.get_time(t_start)
+            b.t_end_plan = self.get_time(t_end)
+            delta = datetime.combine(date.today(), b.t_end_plan) - datetime.combine(date.today(), b.t_start_plan)
+            len = delta.seconds/60
+            b.duration = len
+            b.save()
+
+        return render(request, self.template_name, self.get_context_data())
 
     def get_context_data(self, **kwargs):
         context = super(WateringMain, self).get_context_data(**kwargs)
