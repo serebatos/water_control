@@ -37,11 +37,11 @@ class WateringMain(TemplateView):
             key = 't_start_plan_' + id
             t_start = post_data[key]
             t_end = post_data['t_end_plan_' + id]
-            len = post_data['length_' + id]
+            len_from_form = post_data['length_' + id]
             b.t_start_plan = self.get_time(t_start)
             b.t_end_plan = self.get_time(t_end)
             delta = datetime.combine(date.today(), b.t_end_plan) - datetime.combine(date.today(), b.t_start_plan)
-            len = delta.seconds/60
+            len = delta.seconds / 60
             b.duration = len
             b.save()
 
@@ -82,8 +82,11 @@ class BranchDetail(DetailView):
 
     def get_object(self):
         object = super(BranchDetail, self).get_object()
+        last_accessed = object.last_accessed
         object.last_accessed = timezone.now()
         object.save()
+        # Показываем предыдущее значение
+        object.last_accessed = last_accessed
         return object
 
 

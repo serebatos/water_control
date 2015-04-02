@@ -93,7 +93,7 @@ to: '{{ session.send|date:"H:i:s" }}'}
                         <div class="input-group clockpicker" data-autoclose="true" data-placement="left"
                              data-align="top">
                             <input id="id_t_start_plan_{{ branch.id }}" name="t_start_plan_{{ branch.id }}"
-                                   value="{{ branch.t_start_plan }}"
+                                   value="{{ branch.t_start_plan |date:"H:i" }}"
                                    size="7">
                                             <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-time"></span>
@@ -104,7 +104,7 @@ to: '{{ session.send|date:"H:i:s" }}'}
                         <div class="input-group clockpicker" data-autoclose="true" data-placement="left"
                              data-align="top">
                             <input id="id_t_end_plan_{{ branch.id }}" name="t_end_plan_{{ branch.id }}"
-                                   value="{{ branch.t_end_plan }}"
+                                   value="{{ branch.t_end_plan |date:"H:i" }}"
                                    size="7">
                                             <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-time"></span>
@@ -119,10 +119,11 @@ to: '{{ session.send|date:"H:i:s" }}'}
                         {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
                         <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
                         {#                    <div class="btn_red" name="stop" id="cmd_stop_{{ branch.id }}">Stop</div>#}
-                        <input type="button" name="on" id="cmd_on_{{ branch.id }}" value="Turn on"/>
-                        <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Turn off"/>
+                        <input type="button" name="on" id="cmd_on_{{ branch.id }}" value="On"/>
+                        <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Off"/>
                     </td>
                 </tr>
+                <tr><td></td><td>MnTuWedThFrStSu</td><td colspan="4">&nbsp;</td></tr>
             {% endfor %}
             <tr>
                 <td colspan="6" align="right">
