@@ -70,7 +70,7 @@ to: '{{ session.send|date:"H:i:s" }}'}
 {% endblock %}
 {% block header %} {{ title }} {% endblock %}
 {% block main %}
-    <form method="POST" action=".">
+    <form method="POST" action="" id="branch_form">
         {% csrf_token %}
         <table>
             <thead>
@@ -123,7 +123,27 @@ to: '{{ session.send|date:"H:i:s" }}'}
                         <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Off"/>
                     </td>
                 </tr>
-                <tr><td></td><td>MnTuWedThFrStSu</td><td colspan="4">&nbsp;</td></tr>
+                {# Дни недели #}
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="id_monday_{{ branch.id }}" name="monday_{{ branch.id }}"
+                               {% if branch.monday == True %}checked="{{ branch.monday }}" {% endif %}/>Mn
+                        <input type="checkbox" id="id_tuesday_{{ branch.id }}" name="tuesday_{{ branch.id }}"
+                               {% if branch.tuesday == True %}checked="{{ branch.tuesday }}"{% endif %}/>Tu
+                        <input type="checkbox" id="id_wednesday_{{ branch.id }}" name="wednesday_{{ branch.id }}"
+                               {% if branch.wednesday == True %}checked="{{ branch.wednesday }}"{% endif %}/>Wd
+                        <input type="checkbox" id="id_thursday_{{ branch.id }}" name="thursday_{{ branch.id }}"
+                               {% if branch.thursday == True %}checked="{{ branch.thursday }}"{% endif %}/>Th
+                        <input type="checkbox" id="id_friday_{{ branch.id }}" name="friday_{{ branch.id }}"
+                               {% if branch.friday == True %}checked="{{ branch.friday }}"{% endif %}/>Fr
+                        <input type="checkbox" id="id_saturday_{{ branch.id }}" name="saturday_{{ branch.id }}"
+                               {% if branch.saturday == True %} checked="{{ branch.saturday }}"{% endif %}/>St
+                        <input type="checkbox" id="id_sunday_{{ branch.id }}" name="sunday_{{ branch.id }}"
+                               {% if branch.sunday == True %}checked="{{ branch.sunday }}"{% endif %}/>Su
+                    </td>
+                    <td colspan="4">&nbsp;</td>
+                </tr>
             {% endfor %}
             <tr>
                 <td colspan="6" align="right">
@@ -160,6 +180,8 @@ to: '{{ session.send|date:"H:i:s" }}'}
     {% else %}
         <h3>No data from temperature sensors</h3>
     {% endif %}
+    <h2>События</h2>
+    <p></p>
 {% endblock %}
 {% block footer %}
     <script type="text/javascript">

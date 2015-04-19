@@ -29,30 +29,70 @@ class WateringMain(TemplateView):
             res_time = datetime.strptime(str_time, "%I:%M %p").time()
         return res_time
 
+    # Сохранение данных с главной страницы
     def post(self, request):
         post_data = request.POST
         branches = Branch.objects.all()
         for b in branches:
-            id = str(b.id)
-            key = 't_start_plan_' + id
+            b_id = str(b.id)
+            key = 't_start_plan_' + b_id
             t_start = post_data[key]
-            t_end = post_data['t_end_plan_' + id]
-            len_from_form = post_data['length_' + id]
+            t_end = post_data['t_end_plan_' + b_id]
+            len_from_form = post_data['length_' + b_id]
             b.t_start_plan = self.get_time(t_start)
             b.t_end_plan = self.get_time(t_end)
             delta = datetime.combine(date.today(), b.t_end_plan) - datetime.combine(date.today(), b.t_start_plan)
             len = delta.seconds / 60
             b.duration = len
+
+            day = 'monday_' + b_id
+            if post_data.has_key(day):
+                b.monday = True
+            else:
+                b.monday = False
+
+            day = 'tuesday_' + b_id
+            if post_data.has_key(day):
+                b.tuesday = True
+            else:
+                b.tuesday = False
+            day = 'wednesday_' + b_id
+            if post_data.has_key(day):
+                b.wednesday = True
+            else:
+                b.wednesday = False
+            day = 'thursday_' + b_id
+            if post_data.has_key(day):
+                b.thursday = True
+            else:
+                b.thursday = False
+            day = 'friday_' + b_id
+            if post_data.has_key(day):
+                b.friday = True
+            else:
+                b.friday = False
+            day = 'saturday_' + b_id
+            if post_data.has_key(day):
+                b.saturday = True
+            else:
+                b.saturday = False
+            day = 'sunday_' + b_id
+            if post_data.has_key(day):
+                b.sunday = True
+            else:
+                b.sunday = False
             b.save()
 
         return render(request, self.template_name, self.get_context_data())
+
 
     def get_context_data(self, **kwargs):
         context = super(WateringMain, self).get_context_data(**kwargs)
         temperatures = read_temp()
         temp_dev_list = list(Device.objects.all())
-        # Только при первом запуске(мудрить с init приложения не стал)
+        # Инициализация. Если в базе нет устройств
         if len(temp_dev_list) == 0:
+            # то получем список подсоединенных устройств и пишем его в базу
             devices = get_devices()
             for d in devices:
                 new_device = Device(name=d, descr=d)
