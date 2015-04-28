@@ -12,6 +12,7 @@ from ..models import Branch, Status, Device
 from ..temp_mon import *
 from datetime import datetime, date
 from django.shortcuts import render
+from watering.models import Maintanence_log, Maintanence
 
 
 __author__ = 'bonecrusher'
@@ -32,62 +33,84 @@ class WateringMain(TemplateView):
     # Сохранение данных с главной страницы
     def post(self, request):
         post_data = request.POST
-        branches = Branch.objects.all()
-        for b in branches:
-            b_id = str(b.id)
-            key = 't_start_plan_' + b_id
-            t_start = post_data[key]
-            t_end = post_data['t_end_plan_' + b_id]
-            len_from_form = post_data['length_' + b_id]
-            b.t_start_plan = self.get_time(t_start)
-            b.t_end_plan = self.get_time(t_end)
-            delta = datetime.combine(date.today(), b.t_end_plan) - datetime.combine(date.today(), b.t_start_plan)
-            len = delta.seconds / 60
-            b.duration = len
+        key = "maintanence_inp"
+        if post_data.has_key(key):
+            value = post_data[key]
+            if len(value):
+                m_list = list(Maintanence.objects.filter(name=value))
+                if not m_list or len(m_list) <= 0:
+                    m = Maintanence(name=post_data[key])
+                    m.save()
+                else:
+                    m = m_list[0]
+                ml = Maintanence_log(maintanence=m, work_description='Test', last_accessed=datetime.now())
+                ml.save()
+        else:
+            branches = Branch.objects.all()
+            for b in branches:
+                b_id = str(b.id)
+                key = 't_start_plan_' + b_id
+                if post_data.has_key(key):
+                    t_start = post_data[key]
 
-            day = 'monday_' + b_id
-            if post_data.has_key(day):
-                b.monday = True
-            else:
-                b.monday = False
+                key = 't_end_plan_' + b_id
+                if post_data.has_key(key):
+                    t_end = post_data[key]
 
-            day = 'tuesday_' + b_id
-            if post_data.has_key(day):
-                b.tuesday = True
-            else:
-                b.tuesday = False
-            day = 'wednesday_' + b_id
-            if post_data.has_key(day):
-                b.wednesday = True
-            else:
-                b.wednesday = False
-            day = 'thursday_' + b_id
-            if post_data.has_key(day):
-                b.thursday = True
-            else:
-                b.thursday = False
-            day = 'friday_' + b_id
-            if post_data.has_key(day):
-                b.friday = True
-            else:
-                b.friday = False
-            day = 'saturday_' + b_id
-            if post_data.has_key(day):
-                b.saturday = True
-            else:
-                b.saturday = False
-            day = 'sunday_' + b_id
-            if post_data.has_key(day):
-                b.sunday = True
-            else:
-                b.sunday = False
-            b.save()
+                key = 'length_' + b_id
+                if post_data.has_key(key):
+                    len_from_form = post_data[key]
+
+                b.t_start_plan = self.get_time(t_start)
+                b.t_end_plan = self.get_time(t_end)
+                delta = datetime.combine(date.today(), b.t_end_plan) - datetime.combine(date.today(), b.t_start_plan)
+                l = delta.seconds / 60
+                b.duration = l
+
+                day = 'monday_' + b_id
+                if post_data.has_key(day):
+                    b.monday = True
+                else:
+                    b.monday = False
+
+                day = 'tuesday_' + b_id
+                if post_data.has_key(day):
+                    b.tuesday = True
+                else:
+                    b.tuesday = False
+                day = 'wednesday_' + b_id
+                if post_data.has_key(day):
+                    b.wednesday = True
+                else:
+                    b.wednesday = False
+                day = 'thursday_' + b_id
+                if post_data.has_key(day):
+                    b.thursday = True
+                else:
+                    b.thursday = False
+                day = 'friday_' + b_id
+                if post_data.has_key(day):
+                    b.friday = True
+                else:
+                    b.friday = False
+                day = 'saturday_' + b_id
+                if post_data.has_key(day):
+                    b.saturday = True
+                else:
+                    b.saturday = False
+                day = 'sunday_' + b_id
+                if post_data.has_key(day):
+                    b.sunday = True
+                else:
+                    b.sunday = False
+                b.save()
 
         return render(request, self.template_name, self.get_context_data())
 
 
     def get_context_data(self, **kwargs):
         context = super(WateringMain, self).get_context_data(**kwargs)
+
         temperatures = read_temp()
         temp_dev_list = list(Device.objects.all())
         # Инициализация. Если в базе нет устройств
@@ -105,10 +128,19 @@ class WateringMain(TemplateView):
             td = next(temp_dev for temp_dev in temp_dev_list if temp_dev.name == dev)
             if td:
                 td.value = temp
+
+        # Читаем полив
         branches = Branch.objects.all()
+
+        # todo: last events for 3 month for example...
+        maintanence_log = Maintanence_log.objects.all()
+        maintanence = Maintanence.objects.all()
+
         context['title'] = 'This is my app. It uses Django templates'
         context['result'] = branches
         context['temp_result'] = temp_dev_list
+        context['maintanence'] = maintanence
+        context['maintanence_log'] = maintanence_log
 
         return context
 

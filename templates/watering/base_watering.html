@@ -37,6 +37,16 @@ from: '{{ session.sbegin|date:"H:i:s" }}',
 to: '{{ session.send|date:"H:i:s" }}'}
   {% endcomment %}
     <script type="text/javascript">
+        $(function () {
+            $("input[type=submit], input[type=button]")
+                    .button()
+                    .click(function (event) {
+                        event.default()
+                    });
+            $("div.format").buttonset();
+        });
+
+
         $(document).ready(function () {
 
             $("input[type='button'][id*='cmd']").click(function () {
@@ -77,10 +87,10 @@ to: '{{ session.send|date:"H:i:s" }}'}
             <tr align="left">
                 <th>№</th>
                 <th>Полив</th>
-                <th>Состояние</th>
-                <th>Запуск</th>
-                <th>Завершение</th>
-                <th>Управление</th>
+                <th>State</th>
+                <th>Start</th>
+                <th>Stop</th>
+                <th>Controls</th>
             </tr>
             </thead>
             <tbody>
@@ -127,20 +137,29 @@ to: '{{ session.send|date:"H:i:s" }}'}
                 <tr>
                     <td></td>
                     <td>
-                        <input type="checkbox" id="id_monday_{{ branch.id }}" name="monday_{{ branch.id }}"
-                               {% if branch.monday == True %}checked="{{ branch.monday }}" {% endif %}/>Mn
-                        <input type="checkbox" id="id_tuesday_{{ branch.id }}" name="tuesday_{{ branch.id }}"
-                               {% if branch.tuesday == True %}checked="{{ branch.tuesday }}"{% endif %}/>Tu
-                        <input type="checkbox" id="id_wednesday_{{ branch.id }}" name="wednesday_{{ branch.id }}"
-                               {% if branch.wednesday == True %}checked="{{ branch.wednesday }}"{% endif %}/>Wd
-                        <input type="checkbox" id="id_thursday_{{ branch.id }}" name="thursday_{{ branch.id }}"
-                               {% if branch.thursday == True %}checked="{{ branch.thursday }}"{% endif %}/>Th
-                        <input type="checkbox" id="id_friday_{{ branch.id }}" name="friday_{{ branch.id }}"
-                               {% if branch.friday == True %}checked="{{ branch.friday }}"{% endif %}/>Fr
-                        <input type="checkbox" id="id_saturday_{{ branch.id }}" name="saturday_{{ branch.id }}"
-                               {% if branch.saturday == True %} checked="{{ branch.saturday }}"{% endif %}/>St
-                        <input type="checkbox" id="id_sunday_{{ branch.id }}" name="sunday_{{ branch.id }}"
-                               {% if branch.sunday == True %}checked="{{ branch.sunday }}"{% endif %}/>Su
+                        <div id="format" class="format">
+                            <input type="checkbox" id="id_monday_{{ branch.id }}" name="monday_{{ branch.id }}"
+                                   {% if branch.monday == True %}checked="{{ branch.monday }}" {% endif %}/>
+                            <label for="id_monday_{{ branch.id }}">Mn</label>
+                            <input type="checkbox" id="id_tuesday_{{ branch.id }}" name="tuesday_{{ branch.id }}"
+                                   {% if branch.tuesday == True %}checked="{{ branch.tuesday }}"{% endif %}/>
+                            <label for="id_tuesday_{{ branch.id }}">Tu</label>
+                            <input type="checkbox" id="id_wednesday_{{ branch.id }}" name="wednesday_{{ branch.id }}"
+                                   {% if branch.wednesday == True %}checked="{{ branch.wednesday }}"{% endif %}/>
+                            <label for="id_wednesday_{{ branch.id }}">Wd</label>
+                            <input type="checkbox" id="id_thursday_{{ branch.id }}" name="thursday_{{ branch.id }}"
+                                   {% if branch.thursday == True %}checked="{{ branch.thursday }}"{% endif %}/>
+                            <label for="id_thursday_{{ branch.id }}">Th</label>
+                            <input type="checkbox" id="id_friday_{{ branch.id }}" name="friday_{{ branch.id }}"
+                                   {% if branch.friday == True %}checked="{{ branch.friday }}"{% endif %}/>
+                            <label for="id_friday_{{ branch.id }}">Fr</label>
+                            <input type="checkbox" id="id_saturday_{{ branch.id }}" name="saturday_{{ branch.id }}"
+                                    {% if branch.saturday == True %} checked="{{ branch.saturday }}"{% endif %}/>
+                            <label for="id_saturday_{{ branch.id }}">St</label>
+                            <input type="checkbox" id="id_sunday_{{ branch.id }}" name="sunday_{{ branch.id }}"
+                                   {% if branch.sunday == True %}checked="{{ branch.sunday }}"{% endif %}/>
+                            <label for="id_sunday_{{ branch.id }}">Su</label>
+                        </div>
                     </td>
                     <td colspan="4">&nbsp;</td>
                 </tr>
@@ -179,9 +198,33 @@ to: '{{ session.send|date:"H:i:s" }}'}
         </table>
     {% else %}
         <h3>No data from temperature sensors</h3>
+        <h2>События</h2>
+        <p></p>
+        <form method="POST" action="" id="maint_form">
+            {% csrf_token %}
+            <input list="maintanence_dl_id" name="maintanence_inp" id="maintanence_inp">
+            <datalist id="maintanence_dl_id" name="maintanence_dl_name">
+                {% for m in maintanence %}
+                    <option value="{{ m.name }}">
+                {% endfor %}
+            </datalist>
+            <input type="submit" value="Save"/>
+        </form>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <table>
+            {% for ml in maintanence_log %}
+                <tr>
+                    <td>{{ ml.maintanence.name }}</td>
+                    <td>{{ ml.work_description }}</td>
+                    <td>{{ ml.last_accessed }}</td>
+                </tr>
+            {% endfor %}
+        </table>
     {% endif %}
-    <h2>События</h2>
-    <p></p>
+
 {% endblock %}
 {% block footer %}
     <script type="text/javascript">

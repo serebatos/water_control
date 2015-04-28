@@ -25,7 +25,7 @@ class Status(models.Model):
 
 
 class Branch(models.Model):
-    leg = models.IntegerField(default=-1,max_length=2)
+    leg = models.IntegerField(default=-1, max_length=2)
     descr = models.CharField(max_length=30)
     status = models.ForeignKey(Status)
     t_start_plan = models.TimeField(null=True, blank=True)
@@ -55,4 +55,11 @@ class Branch(models.Model):
         return reverse('branch-detail', kwargs={'pk': self.pk})
 
 
+class Maintanence(models.Model):
+    name = models.CharField(max_length=30)
 
+
+class Maintanence_log(models.Model):
+    maintanence = models.ForeignKey(Maintanence)
+    work_description = models.CharField(max_length=50)
+    last_accessed = models.DateTimeField()

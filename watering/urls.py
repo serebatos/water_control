@@ -4,6 +4,7 @@ from watering.views.watering_view import WateringMain, BranchDetail, CommandView
 
 urlpatterns = patterns('',
                        url(r'^$', WateringMain.as_view(), name='main'),
+                       url(r'/maintanence^$', WateringMain.as_view(), name='main'),
                        url(r'^branch/(?P<pk>\d+)/$', BranchDetail.as_view(), name='branch-detail'),
                        url(r'^branch/(?P<pk>\d+)/save$', BranchUpdate.as_view(), name='branch-upd'),
                        url(r'^branch/(?P<pk>\d+)/(?P<cmd>\w+)$', CommandView.as_view(), name='branch-cmd'),
