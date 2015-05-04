@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import datetime
 from cmd_client import CommandSender
-from command import Command
+from command import Command, CommandInner
 
 __author__ = 'bonecrusher'
 
@@ -127,7 +127,7 @@ class JobManager():
             branch.t_end_plan = t_end_plan
             branch.save()
             # Шлем команду на поднятие ноги
-            res = CommandSender.send(Command.CMD_SET, branch.leg)
+            res = CommandSender.send(CommandInner(Command.CMD_SET, branch.leg))
             # Поднять ногу!
             self.logger.info('Result: %s', res.result)
             if res.result == 'OK':
@@ -151,7 +151,7 @@ class JobManager():
             branch.t_end_fact = t_curr
             branch.save()
             # Опустить ногу!
-            res = CommandSender.send(Command.CMD_UNSET, branch.leg)
+            res = CommandSender.send(CommandInner(Command.CMD_UNSET, branch.leg))
             if res.result == 'OK':
                 self.logger.info('Command is completed successfully!')
             else:

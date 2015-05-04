@@ -85,11 +85,14 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+            'format': "[%(asctime)s] %(threadName)s %(levelname)s [%(name)s:%(lineno)s] %(message)s",
             'datefmt': "%d/%b/%Y %H:%M:%S"
         },
         'simple': {
-            'format': '%(levelname)s %(message)s'
+            'format': '[%(asctime)s] %(levelname)s %(message)s'
+        },
+        'simple_mt': {
+            'format': '[%(asctime)s] %(levelname)s %(threadName)s :: %(message)s'
         },
         'brief': {
             'format': '%(message)s',
@@ -98,7 +101,7 @@ LOGGING = {
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
-            'formatter': 'simple',
+            'formatter': 'simple_mt',
             'level': 'INFO',
             'stream': 'ext://sys.stdout',
         },
@@ -116,7 +119,7 @@ LOGGING = {
         # 'django': {
         # 'handlers': ['file'],
         # 'propagate': True,
-        #     'level': 'DEBUG',
+        # 'level': 'DEBUG',
         # },
         'watering': {
             'handlers': ['console'],

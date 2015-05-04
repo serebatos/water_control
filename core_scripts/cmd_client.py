@@ -11,7 +11,7 @@ class CommandSender():
     logger = logging.getLogger(__name__)
 
     @staticmethod
-    def send(command, leg):
+    def send(i_cmd):
         # Create a TCP/IP socket
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -23,7 +23,10 @@ class CommandSender():
         try:
             sock.connect(server_address)
             # Send data
-            j = '{"name":"' + command + '", "value": "' + str(leg) + '"}'
+            j = '{"cmd":"' + i_cmd.cmd + '", "value": "' + str(i_cmd.leg) + '"'
+            if not i_cmd.delay == 0:
+                j += ', "delay":"' + str(i_cmd.delay) + '"'
+            j += "}"
             CommandSender.logger.info('Sending command (%s)', j)
             # sock.sendall(json.dumps(j))
             sock.sendall(j)

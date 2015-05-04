@@ -6,7 +6,7 @@ from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.views.generic import TemplateView, DetailView, RedirectView, FormView, UpdateView
 from core_scripts.cmd_client import CommandSender
-from core_scripts.command import Command
+from core_scripts.command import Command, CommandInner
 from core_scripts.job_manager import JobManager
 from ..models import Branch, Status, Device
 from ..temp_mon import *
@@ -199,10 +199,10 @@ class CommandView(RedirectView):
             stat = Status.objects.get(name=JobManager.STATUS_STOPPED)
         elif cmd == 'on':
             stat = Status.objects.get(name=JobManager.STATUS_RUNNING)
-            CommandSender.send(Command.CMD_SET, branch.leg)
+            CommandSender.send(CommandInner(Command.CMD_SET, branch.leg))
         elif cmd == 'off':
             stat = Status.objects.get(name=JobManager.STATUS_STOPPED)
-            CommandSender.send(Command.CMD_UNSET, branch.leg)
+            CommandSender.send(CommandInner(Command.CMD_UNSET, branch.leg))
 
         if stat:
             branch.status = stat

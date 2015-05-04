@@ -234,3 +234,2098 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/socket.py", line 224, in meth
     return getattr(self._sock,name)(*args)
 error: [Errno 111] Connection refused
+[03/May/2015 13:00:25] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:00:25] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:00:25] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:02:16] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:02:16] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:02:16] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:02:54] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:02:54] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:02:54] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:06:10] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:06:10] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:06:10] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:07:08] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:07:08] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:07:08] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:07:42] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:07:42] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:07:49] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:07:49] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:07:49] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:07:57] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:07:57] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:07:57] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:08:06] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:08:06] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:08:06] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:08:42] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:08:42] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:08:42] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:11:16] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:11:16] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:11:16] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:11:28] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:11:28] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:11:28] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:18:32] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:18:32] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:18:32] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:18:32] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:18:32] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:18:32] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:18:32] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40562)
+[03/May/2015 13:18:32] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:18:32] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:18:32] INFO [cmd_processor:40] 1430659112.49 Processing: leg up, value: 7
+[03/May/2015 13:19:29] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:19:29] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:19:29] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:19:31] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:19:31] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:19:31] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:19:31] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40580)
+[03/May/2015 13:19:31] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:19:31] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:19:31] INFO [cmd_processor:40] 1430659171.8 Processing: leg up, value: 7
+[03/May/2015 13:19:56] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:19:56] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:19:56] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:19:58] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:19:58] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:19:58] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:19:58] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40589)
+[03/May/2015 13:19:58] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:19:58] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:19:58] INFO [cmd_processor:40] 1430659198.66 Processing: leg up, value: 7
+[03/May/2015 13:19:58] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:19:58] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:19:58] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:19:58] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"leg:7\",\"result\":\"OK\"}"'
+[03/May/2015 13:19:58] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "leg:7","result":"OK"}'
+[03/May/2015 13:19:58] INFO [core_scripts.cmd_client:40] Response length is 49
+[03/May/2015 13:19:58] ERROR [core_scripts.cmd_client:46] Expecting ':' delimiter: line 1 column 35 (char 34)
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 42, in send
+    res = Result(response)
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/result.py", line 8, in __init__
+    self.__dict__ = json.loads(j)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting ':' delimiter: line 1 column 35 (char 34)
+[03/May/2015 13:21:09] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:21:09] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:21:09] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:21:11] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:21:11] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:21:11] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:21:11] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40610)
+[03/May/2015 13:21:11] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:21:11] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:21:11] INFO [cmd_processor:40] 1430659271.7 Processing: leg up, value: 7
+[03/May/2015 13:21:11] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:21:11] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:21:11] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"leg:7\",\"result\":\"OK\"}"'
+[03/May/2015 13:21:11] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:21:11] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "leg:7","result":"OK"}'
+[03/May/2015 13:21:11] INFO [core_scripts.cmd_client:40] Response length is 49
+[03/May/2015 13:21:21] ERROR [core_scripts.cmd_client:46] Expecting ':' delimiter: line 1 column 35 (char 34)
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 42, in send
+    res = Result(response)
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/result.py", line 8, in __init__
+    self.__dict__ = json.loads(j)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting ':' delimiter: line 1 column 35 (char 34)
+[03/May/2015 13:21:30] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:21:30] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:21:32] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:21:32] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:21:32] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:21:41] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:21:41] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:21:43] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:21:43] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:21:43] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:22:01] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:22:01] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:22:03] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:22:03] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:22:03] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:22:25] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:22:25] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:22:25] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:22:27] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:22:27] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:22:27] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:22:27] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40638)
+[03/May/2015 13:22:27] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:22:27] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:22:27] INFO [cmd_processor:40] 1430659347.73 Processing: leg up, value: 7
+[03/May/2015 13:22:27] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:22:27] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:22:27] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:22:27] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"leg:7\", \"result\":\"OK\"}"'
+[03/May/2015 13:22:27] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "leg:7", "result":"OK"}'
+[03/May/2015 13:22:27] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:22:27] ERROR [core_scripts.cmd_client:46] Expecting ':' delimiter: line 1 column 35 (char 34)
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 42, in send
+    res = Result(response)
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/result.py", line 8, in __init__
+    self.__dict__ = json.loads(j)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting ':' delimiter: line 1 column 35 (char 34)
+[03/May/2015 13:23:28] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:23:28] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:23:28] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:23:30] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40655)
+[03/May/2015 13:23:30] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:23:30] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:23:30] INFO [cmd_processor:40] 1430659410.67 Processing: leg up, value: 7
+[03/May/2015 13:23:30] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:23:30] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:23:30] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "leg":"7", "result":"OK"}'
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:40] Response length is 52
+[03/May/2015 13:23:30] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[03/May/2015 13:24:02] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:02] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:04] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:24:04] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:24:04] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:24:06] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:06] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:08] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:08] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:08] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:08] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:09] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:09] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:10] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:10] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:11] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:11] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:12] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:12] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:13] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:13] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:14] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:14] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:15] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:15] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:16] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:16] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:28] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:28] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:30] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:30] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:32] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:24:32] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:24:32] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:24:35] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:35] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:24:35] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:24:37] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40677)
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:24:37] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:24:37] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:24:37] INFO [cmd_processor:40] 1430659477.88 Processing: leg up, value: 7
+[03/May/2015 13:24:37] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:24:37] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:24:37] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "leg":"7", "result":"OK"}'
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:40] Response length is 52
+[03/May/2015 13:24:37] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[03/May/2015 13:26:00] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:26:00] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:26:00] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:26:02] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40700)
+[03/May/2015 13:26:02] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:26:02] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:26:02] INFO [cmd_processor:40] 1430659562.02 Processing: leg up, value: 7
+[03/May/2015 13:26:02] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg switch\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:26:02] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:26:02] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg switch", "leg":"7", "result":"OK"}'
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:40] Response length is 52
+[03/May/2015 13:26:02] INFO [core_scripts.cmd_client:43] Received "leg switch is OK"
+[03/May/2015 13:33:38] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:33:38] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:33:38] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg up", "value": "7"})
+[03/May/2015 13:33:40] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40820)
+[03/May/2015 13:33:40] INFO [cmd_processor:89] Received "{"name":"leg up", "value": "7"}"
+[03/May/2015 13:33:40] INFO [cmd_processor:92] Command is 'leg up 7'
+[03/May/2015 13:33:40] INFO [cmd_processor:40] 1430660020.87 Processing: leg up, value: 7
+[03/May/2015 13:33:40] INFO [cmd_processor:46] Leg 7 was set to HIGH OUT
+[03/May/2015 13:33:40] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:33:40] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg up", "leg":"7", "result":"OK"}'
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:40] Response length is 48
+[03/May/2015 13:33:40] INFO [core_scripts.cmd_client:43] Received "leg up is OK"
+[03/May/2015 13:34:05] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:05] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:07] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:34:07] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:34:07] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:34:09] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:09] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:10] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:10] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:11] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:11] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:14] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:14] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:21] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:21] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:38] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:38] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:40] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:34:40] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:34:40] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:34:42] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:42] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:34:42] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:34:44] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:34:44] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:34:44] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40843)
+[03/May/2015 13:34:44] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:34:44] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:34:44] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:34:44] INFO [cmd_processor:40] 1430660084.13 Processing: leg down, value: 7
+[03/May/2015 13:34:44] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:34:44] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:34:44] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:34:44] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:34:44] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:34:44] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:34:52] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[03/May/2015 13:35:18] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:18] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:20] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:35:20] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:35:20] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:35:22] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:22] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:23] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:23] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:24] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:24] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:25] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:25] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:27] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:35:27] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:35:27] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:35:31] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:31] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:34] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:34] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:36] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:35:36] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:35:36] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:35:39] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:35:39] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:35:41] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:35:41] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:35:41] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:36:06] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:06] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:06] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:36:08] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40874)
+[03/May/2015 13:36:08] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:36:08] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:36:08] INFO [cmd_processor:40] 1430660168.03 Processing: leg down, value: 7
+[03/May/2015 13:36:08] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:36:08] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:08] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:36:08] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[03/May/2015 13:36:24] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:24] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:33] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:33] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:35] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:36:35] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:36:35] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:36:40] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:40] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:42] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:36:42] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:36:42] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:36:42] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:42] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:44] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:44] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:44] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:36:44] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:36:44] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:36:46] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:46] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:46] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:36:46] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:36:46] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:36:53] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:36:53] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:36:55] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:36:55] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:36:55] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:37:01] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:01] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:02] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:02] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:03] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:37:03] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:37:03] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:37:03] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:03] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:04] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:04] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:04] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:37:04] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40901)
+[03/May/2015 13:37:04] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:37:04] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:37:04] INFO [cmd_processor:40] 1430660224.76 Processing: leg down, value: 7
+[03/May/2015 13:37:04] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:37:04] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:37:04] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:37:04] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[03/May/2015 13:37:05] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:05] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:37:05] INFO [cmd_processor:84] 2:connection from ('127.0.0.1', 40903)
+[03/May/2015 13:37:05] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:37:05] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:37:05] INFO [cmd_processor:40] 1430660225.73 Processing: leg down, value: 7
+[03/May/2015 13:37:05] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:37:05] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:37:05] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:37:05] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[03/May/2015 13:37:06] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:06] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:37:06] INFO [cmd_processor:84] 3:connection from ('127.0.0.1', 40904)
+[03/May/2015 13:37:06] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:37:06] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:37:06] INFO [cmd_processor:40] 1430660226.7 Processing: leg down, value: 7
+[03/May/2015 13:37:06] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:37:06] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:06] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:37:06] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[03/May/2015 13:37:07] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:37:07] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:37:07] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:37:08] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:37:08] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:37:08] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:37:52] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:52] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:37:56] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:37:56] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:38:00] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:38:00] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:38:07] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:38:07] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:38:07] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:38:09] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40925)
+[03/May/2015 13:38:09] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:38:09] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:38:09] INFO [cmd_processor:40] 1430660289.63 Processing: leg down, value: 7
+[03/May/2015 13:38:09] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:38:09] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:38:09] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:38:09] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[03/May/2015 13:38:51] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:38:51] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:38:53] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:38:53] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:38:53] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[03/May/2015 13:38:59] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:38:59] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:39:01] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:39:01] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:39:03] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:39:03] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:39:05] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:39:05] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[03/May/2015 13:39:05] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:20] ---------------------------------
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[03/May/2015 13:39:07] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 40944)
+[03/May/2015 13:39:07] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[03/May/2015 13:39:07] INFO [cmd_processor:92] Command is 'leg down 7'
+[03/May/2015 13:39:07] INFO [cmd_processor:40] 1430660347.33 Processing: leg down, value: 7
+[03/May/2015 13:39:07] INFO [cmd_processor:49] Leg 7 was set to IN
+[03/May/2015 13:39:07] DEBUG [cmd_processor:38] Looking for the next command
+[03/May/2015 13:39:07] INFO [cmd_processor:80] Waiting for a connection
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:40] Response length is 50
+[03/May/2015 13:39:07] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:30:56] DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:30:56] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:30:56] INFO [cmd_processor:80] Waiting for a connection
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:30:56] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 42245)
+[04/May/2015 19:30:56] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:30:56] INFO [cmd_processor:92] Command is 'leg down 7'
+[04/May/2015 19:30:56] INFO [cmd_processor:40] 1430767856.54 Processing: leg down, value: 7
+[04/May/2015 19:30:56] INFO [cmd_processor:49] Leg 7 was set to IN
+[04/May/2015 19:30:56] DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:30:56] INFO [cmd_processor:80] Waiting for a connection
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:30:56] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:31:24] DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:31:24] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[04/May/2015 19:31:24] INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:31:24] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:31:24] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:31:39] DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:31:39] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[04/May/2015 19:31:39] INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:31:39] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:31:39] ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:32:08] DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:32:08] INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:32:08] INFO [cmd_processor:80] Waiting for a connection
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:32:08] INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 42248)
+[04/May/2015 19:32:08] INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:32:08] INFO [cmd_processor:92] Command is 'leg down 7'
+[04/May/2015 19:32:08] INFO [cmd_processor:40] 1430767928.31 Processing: leg down, value: 7
+[04/May/2015 19:32:08] INFO [cmd_processor:49] Leg 7 was set to IN
+[04/May/2015 19:32:08] DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:32:08] INFO [cmd_processor:80] Waiting for a connection
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:32:08] INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:36:38] Thread-1 DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:36:38] Thread-2 INFO [cmd_processor:70] Starting up on ('localhost', 10000)
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:36:38] Thread-2 INFO [cmd_processor:80] Waiting for a connection
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:36:38] Thread-2 INFO [cmd_processor:84] 1:connection from ('127.0.0.1', 42260)
+[04/May/2015 19:36:38] Thread-2 INFO [cmd_processor:89] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:36:38] Thread-2 INFO [cmd_processor:92] Command is 'leg down 7'
+[04/May/2015 19:36:38] Thread-1 INFO [cmd_processor:40] 1430768198.66 Processing: leg down, value: 7
+[04/May/2015 19:36:38] Thread-1 INFO [cmd_processor:49] Leg 7 was set to IN
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:36:38] Thread-1 DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:36:38] Thread-2 INFO [cmd_processor:80] Waiting for a connection
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:36:38] MainThread INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:39:26] CommandProcessorD DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:71] Starting up on ('localhost', 10000)
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:81] Waiting for a connection
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:85] 1:connection from ('127.0.0.1', 42262)
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:90] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:93] Command is 'leg down 7'
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:40] 1430768366.92 Processing: leg down, value: 7
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:49] Leg 7 was set to IN
+[04/May/2015 19:39:26] CommandProcessor DEBUG [cmd_processor:38] Looking for the next command
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:39:26] CommandProcessor INFO [cmd_processor:81] Waiting for a connection
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:39:26] CommandProcessor INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:41:32] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:41:32] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:41:32] Thread-1 INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:41:32] Thread-1 INFO [cmd_processor:86] 1:connection from ('127.0.0.1', 42343)
+[04/May/2015 19:41:32] Thread-1 INFO [cmd_processor:91] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:41:32] Thread-1 INFO [cmd_processor:94] Command is 'leg down 7'
+[04/May/2015 19:41:32] CommandProcessorD INFO [cmd_processor:41] 1430768492.02 Processing: leg down, value: 7
+[04/May/2015 19:41:32] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to IN
+[04/May/2015 19:41:32] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:41:32] Thread-1 INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:41:32] CommandProcessor INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:42:41] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:42:41] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:42:41] Thread-1 INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:42:41] Thread-1 INFO [cmd_processor:86] 1:connection from ('127.0.0.1', 42357)
+[04/May/2015 19:42:41] Thread-1 INFO [cmd_processor:91] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:42:41] Thread-1 INFO [cmd_processor:94] Command is 'leg down 7'
+[04/May/2015 19:42:41] CommandProcessorD INFO [cmd_processor:41] 1430768561.99 Processing: leg down, value: 7
+[04/May/2015 19:42:41] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to IN
+[04/May/2015 19:42:41] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:42:41] Thread-1 INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:42:41] CommandProcessor INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:43:06] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:06] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:43:06] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:43:06] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:43:06] CommandProcessor ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:43:12] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:12] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:43:12] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:43:12] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:43:12] CommandProcessor ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:43:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:13] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:43:13] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:43:13] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:43:13] CommandProcessor ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:43:25] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:25] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:43:25] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:43:25] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:43:25] CommandProcessor ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:43:30] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:30] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:43:30] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:43:30] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:43:30] CommandProcessor ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:43:48] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:48] Thread-1 INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:43:48] Thread-1 INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:43:48] Thread-1 INFO [cmd_processor:86] 1:connection from ('127.0.0.1', 42372)
+[04/May/2015 19:43:48] Thread-1 INFO [cmd_processor:91] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:43:48] Thread-1 INFO [cmd_processor:94] Command is 'leg down 7'
+[04/May/2015 19:43:48] CommandProcessorD INFO [cmd_processor:41] 1430768628.41 Processing: leg down, value: 7
+[04/May/2015 19:43:48] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to IN
+[04/May/2015 19:43:48] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:43:48] Thread-1 INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:43:48] CommandProcessor INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:44:38] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:44:38] CommandProcessor INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:44:38] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:44:38] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:44:38] MainThread ERROR [core_scripts.cmd_client:46] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 19:44:48] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:44:48] CommandProcessor INFO [cmd_processor:72] Starting up on ('localhost', 10000)
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:44:48] CommandProcessor INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:44:48] CommandProcessor INFO [cmd_processor:86] 1:connection from ('127.0.0.1', 42374)
+[04/May/2015 19:44:48] CommandProcessor INFO [cmd_processor:91] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:44:48] CommandProcessor INFO [cmd_processor:94] Command is 'leg down 7'
+[04/May/2015 19:44:48] CommandProcessorD INFO [cmd_processor:41] 1430768688.08 Processing: leg down, value: 7
+[04/May/2015 19:44:48] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to IN
+[04/May/2015 19:44:48] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:44:48] CommandProcessor INFO [cmd_processor:82] Waiting for a connection
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:44:48] MainThread INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 19:57:34] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:57:34] CommandProcessor INFO [cmd_processor:80] Starting up on ('localhost', 10000)
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 19:57:34] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:27] Sending command ({"name":"leg down", "value": "7"})
+[04/May/2015 19:57:34] CommandProcessor INFO [cmd_processor:94] 1:connection from ('127.0.0.1', 42479)
+[04/May/2015 19:57:34] CommandProcessor INFO [cmd_processor:99] Received "{"name":"leg down", "value": "7"}"
+[04/May/2015 19:57:34] CommandProcessor INFO [cmd_processor:102] Command is 'leg down 7'
+[04/May/2015 19:57:34] CommandProcessorD INFO [cmd_processor:41] 1430769454.42 Processing: leg down, value: 7
+[04/May/2015 19:57:34] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to LOW OUT
+[04/May/2015 19:57:34] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:35] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 19:57:34] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:39] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:40] Response length is 50
+[04/May/2015 19:57:34] MainThread INFO [core_scripts.cmd_client:43] Received "leg down is OK"
+[04/May/2015 20:11:32] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:11:32] CommandProcessor INFO [cmd_processor:80] Starting up on ('localhost', 10000)
+[04/May/2015 20:11:32] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:11:32] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:11:32] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 20:11:32] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg down", "value": "7"})
+[04/May/2015 20:11:32] CommandProcessor INFO [cmd_processor:94] 1:connection from ('127.0.0.1', 42482)
+[04/May/2015 20:11:32] CommandProcessor INFO [cmd_processor:99] Received "{"cmd":"leg down", "value": "7"}"
+[04/May/2015 20:11:32] CommandProcessor INFO [cmd_processor:102] Command is 'leg down 7'
+[04/May/2015 20:11:32] CommandProcessorD INFO [cmd_processor:41] 1430770292.54 Processing: leg down, value: 7
+[04/May/2015 20:11:55] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:11:55] CommandProcessor INFO [cmd_processor:80] Starting up on ('localhost', 10000)
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:11:55] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg down", "value": "7"})
+[04/May/2015 20:11:55] CommandProcessor INFO [cmd_processor:94] 1:connection from ('127.0.0.1', 42483)
+[04/May/2015 20:11:55] CommandProcessor INFO [cmd_processor:99] Received "{"cmd":"leg down", "value": "7"}"
+[04/May/2015 20:11:55] CommandProcessor INFO [cmd_processor:102] Command is 'leg down 7'
+[04/May/2015 20:11:55] CommandProcessorD INFO [cmd_processor:41] 1430770315.6 Processing: leg down, value: 7
+[04/May/2015 20:11:55] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to LOW OUT
+[04/May/2015 20:11:55] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:11:55] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:43] Response length is 50
+[04/May/2015 20:11:55] MainThread INFO [core_scripts.cmd_client:46] Received "leg down is OK"
+[04/May/2015 20:13:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:80] Starting up on ('localhost', 10000)
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg down", "value": "7"})
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:94] 1:connection from ('127.0.0.1', 42486)
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:99] Received "{"cmd":"leg down", "value": "7"}"
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:102] Command is 'leg down 7'
+[04/May/2015 20:13:13] CommandProcessorD INFO [cmd_processor:41] 1430770393.01 Processing: leg down, value: 7
+[04/May/2015 20:13:13] CommandProcessorD INFO [cmd_processor:50] Leg 7 was set to LOW OUT
+[04/May/2015 20:13:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:90] Waiting for a connection
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg down\", \"leg\":\"7\", \"result\":\"OK\"}"'
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg down", "leg":"7", "result":"OK"}'
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:43] Response length is 50
+[04/May/2015 20:13:13] MainThread INFO [core_scripts.cmd_client:46] Received "leg down is OK"
+[04/May/2015 20:13:13] CommandProcessor INFO [cmd_processor:80] Starting up on ('localhost', 10000)
+[04/May/2015 20:20:44] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42488)
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 20:20:44] CommandProcessorD INFO [cmd_processor:41] 1430770844.33 Processing: leg up, value: 7
+[04/May/2015 20:20:44] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 20:20:44] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 20:20:44] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 20:20:44] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:21:09] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:21:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:21:09] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:21:09] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:21:09] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 20:21:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:21:19] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:21:19] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:21:19] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:21:19] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:21:19] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 20:21:19] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:21:20] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:21:20] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:21:20] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:21:20] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:21:20] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 20:21:20] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:24:09] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42524)
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 20:24:09] CommandProcessorD INFO [cmd_processor:41] 1430771049.33 Processing: leg up, value: 7
+[04/May/2015 20:24:09] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 20:24:09] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 20:24:09] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 20:24:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:26:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42585)
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 20:26:13] CommandProcessorD INFO [cmd_processor:41] 1430771173.14 Processing: leg up, value: 7
+[04/May/2015 20:26:13] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 20:26:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 20:26:13] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 20:26:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 20:29:55] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:29:55] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:29:55] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:29:55] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 20:30:03] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 20:30:03] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 20:30:03] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 20:30:03] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:12:19] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:12:19] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:12:19] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:12:19] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:12:57] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:12:57] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:12:57] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:12:57] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:13:33] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:13:33] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:13:33] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:13:33] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:13:40] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:13:40] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:13:40] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:13:40] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:15:19] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:15:19] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:15:19] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:15:19] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:17:08] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:17:08] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:17:08] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:17:08] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:17:23] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:17:23] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:17:23] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:17:23] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:18:32] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:18:32] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:18:32] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:18:32] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:19:04] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42720)
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:19:04] CommandProcessorD INFO [cmd_processor:41] 1430774344.69 Processing: leg up, value: 7
+[04/May/2015 21:19:04] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:19:04] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:19:04] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:19:04] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:08] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42723)
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:20:08] CommandProcessorD INFO [cmd_processor:41] 1430774408.25 Processing: leg up, value: 7
+[04/May/2015 21:20:08] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:20:08] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:20:08] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:20:08] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:23] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:20:23] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:23] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:23] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:23] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:23] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:23] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:23] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:23] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:43] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:20:43] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:43] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:43] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:43] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:43] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:43] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:43] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:43] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:51] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:20:51] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:51] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:51] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:51] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:51] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:51] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:51] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:51] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:55] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:20:55] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:55] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:55] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:55] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:20:55] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:20:55] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:20:55] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:20:55] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:21:09] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42739)
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:21:09] CommandProcessorD INFO [cmd_processor:41] 1430774469.4 Processing: leg up, value: 7
+[04/May/2015 21:21:09] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:21:09] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:21:09] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"2"})
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 42740)
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"2"}"
+[04/May/2015 21:21:09] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:21:09] CommandProcessorD INFO [cmd_processor:41] 1430774469.41 Processing: leg up, value: 7
+[04/May/2015 21:21:09] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:21:11] CommandProcessorD INFO [cmd_processor:58] Returning leg 7 to LOW OUT
+[04/May/2015 21:21:11] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:21:11] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[04/May/2015 21:21:11] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[04/May/2015 21:21:11] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:21:11] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:22:37] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42742)
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:22:37] CommandProcessorD INFO [cmd_processor:41] 1430774557.4 Processing: leg up, value: 7
+[04/May/2015 21:22:37] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:22:37] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:22:37] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"2"})
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 42743)
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"2"}"
+[04/May/2015 21:22:37] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:22:37] CommandProcessorD INFO [cmd_processor:41] 1430774557.41 Processing: leg up, value: 7
+[04/May/2015 21:22:37] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:22:39] CommandProcessorD INFO [cmd_processor:58] Returning leg 7 to LOW OUT
+[04/May/2015 21:22:39] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:22:39] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[04/May/2015 21:22:39] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[04/May/2015 21:22:39] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:22:39] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:22:51] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:22:51] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:22:51] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:22:51] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:22:51] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:22:51] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:22:51] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:22:51] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:22:51] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:09] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:09] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:09] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:09] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:09] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:09] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:09] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:09] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:12] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:12] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:12] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:12] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:12] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:12] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:12] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:12] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:12] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:13] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:21] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:21] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:21] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:21] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:21] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:21] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:21] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:21] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:21] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:22] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:22] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:22] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:22] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:22] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:22] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:22] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:22] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:23] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:23] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:23] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:23] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:23] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:23] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:23] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:23] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:23] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:24] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:24] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:24] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:24] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:24] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:24] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:24] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:24] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:24] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:30] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:30] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:30] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:30] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:30] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:30] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:30] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:30] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:30] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:31] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:31] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:31] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:31] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:31] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:31] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:31] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:31] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:31] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:35] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:35] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:35] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:35] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:35] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:35] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:35] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:35] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:35] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:36] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:36] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:36] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:36] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:36] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:36] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:36] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:36] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:36] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:37] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:37] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:37] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:37] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:37] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:37] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:37] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:37] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:37] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:38] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42774)
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:23:38] CommandProcessorD INFO [cmd_processor:41] 1430774618.35 Processing: leg up, value: 7
+[04/May/2015 21:23:38] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:23:38] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:38] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"2"})
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 42775)
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"2"}"
+[04/May/2015 21:23:38] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:23:38] CommandProcessorD INFO [cmd_processor:41] 1430774618.36 Processing: leg up, value: 7
+[04/May/2015 21:23:38] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:23:39] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:39] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:39] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:39] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:39] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:39] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:39] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:39] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:39] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:40] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:40] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:40] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:40] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:40] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:40] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:40] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:40] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:40] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:42] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:42] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:42] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:42] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:42] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:42] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:42] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:42] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:42] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:43] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:43] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:43] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:43] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:43] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:43] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:43] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:43] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:43] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:46] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:46] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:46] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:46] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:46] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:46] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:46] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:46] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:46] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:47] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:47] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:47] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:47] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:47] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:47] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:47] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:47] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:47] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:49] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:49] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:49] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:49] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:49] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:49] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:49] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:49] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:49] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:54] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:54] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:54] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:54] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:54] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:54] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:54] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:54] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:54] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:56] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:56] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:56] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:56] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:56] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:56] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:56] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:56] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:56] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:58] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:23:58] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:58] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:58] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:58] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:23:58] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:23:58] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:23:58] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:23:58] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:24:00] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:24:00] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:24:00] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:24:00] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:24:00] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:24:00] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:24:00] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:24:00] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:24:00] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:24:22] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:24:22] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:24:22] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:24:22] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:24:22] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:24:22] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:24:22] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:24:22] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:24:22] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:26:27] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:27:20] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42891)
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:27:20] CommandProcessorD INFO [cmd_processor:41] 1430774840.91 Processing: leg up, value: 7
+[04/May/2015 21:27:20] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:27:20] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:27:20] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"2"})
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 42892)
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"2"}"
+[04/May/2015 21:27:20] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:27:20] CommandProcessorD INFO [cmd_processor:41] 1430774840.92 Processing: leg up, value: 7
+[04/May/2015 21:27:20] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:27:22] CommandProcessorD INFO [cmd_processor:58] Returning leg 7 to LOW OUT
+[04/May/2015 21:27:22] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:27:22] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:27:22] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[04/May/2015 21:27:22] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[04/May/2015 21:27:22] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:27:22] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:27:47] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:27:47] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:27:47] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:27:47] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:27:47] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:27:47] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:27:47] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:27:47] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:28:16] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:28:16] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:28:16] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:28:16] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:28:16] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:28:16] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:28:16] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:28:16] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:28:41] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42898)
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:28:41] CommandProcessorD INFO [cmd_processor:41] 1430774921.69 Processing: leg up, value: 7
+[04/May/2015 21:28:41] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:28:41] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:28:41] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"5"})
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 42899)
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"5"}"
+[04/May/2015 21:28:41] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:28:41] CommandProcessorD INFO [cmd_processor:41] 1430774921.69 Processing: leg up, value: 7
+[04/May/2015 21:28:41] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:28:46] CommandProcessorD INFO [cmd_processor:58] Returning leg 7 to LOW OUT
+[04/May/2015 21:28:46] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:28:46] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:28:46] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[04/May/2015 21:28:46] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[04/May/2015 21:28:46] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:28:46] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:29:13] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:13] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:29:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:13] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:13] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:13] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:13] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:24] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:24] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:29:24] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:24] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:24] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:24] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:24] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:24] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:29] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:29] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:29:29] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:29] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:29] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:29] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:29] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:29] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:34] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:34] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:29:34] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:34] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:34] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:34] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:34] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:34] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:38] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:38] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:29:38] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:38] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:38] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:38] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:38] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:38] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[04/May/2015 21:29:44] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 42916)
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:29:44] CommandProcessorD INFO [cmd_processor:41] 1430774984.06 Processing: leg up, value: 7
+[04/May/2015 21:29:44] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:29:44] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[04/May/2015 21:29:44] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"5"})
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 42917)
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"5"}"
+[04/May/2015 21:29:44] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[04/May/2015 21:29:44] CommandProcessorD INFO [cmd_processor:41] 1430774984.07 Processing: leg up, value: 7
+[04/May/2015 21:29:44] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[04/May/2015 21:29:49] CommandProcessorD INFO [cmd_processor:58] Returning leg 7 to LOW OUT
+[04/May/2015 21:29:49] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[04/May/2015 21:29:49] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[04/May/2015 21:29:49] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[04/May/2015 21:29:49] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[04/May/2015 21:29:49] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[04/May/2015 21:29:49] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
