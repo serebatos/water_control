@@ -1,6 +1,5 @@
 {% extends "watering/base.html" %}
 {% block code %}
-
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
         google.load("visualization", "1", {packages: ["timeline"]});
@@ -41,7 +40,7 @@ to: '{{ session.send|date:"H:i:s" }}'}
             $("input[type=submit], input[type=button]")
                     .button()
                     .click(function (event) {
-                        event.default()
+                        event.default
                     });
             $("div.format").buttonset();
         });
@@ -77,6 +76,13 @@ to: '{{ session.send|date:"H:i:s" }}'}
             });
         });
     </script>
+    <style>
+        #format, #ctr_btns {
+            font-size: 0.8em
+        }
+
+
+    </style>
 {% endblock %}
 {% block header %} {{ title }} {% endblock %}
 {% block main %}
@@ -96,15 +102,68 @@ to: '{{ session.send|date:"H:i:s" }}'}
             <tbody>
             {% for branch in result %}
                 <tr>
-                    <td>{{ forloop.counter }}</td>
-                    <td><a href="{{ MEDIA_URL }}branch/{{ branch.id }}">{{ branch.descr }}</a></td>
-                    <td>{{ branch.status }}</td>
+                    <td><span class="ui-widget ui-state-default ui-button-text"
+                              style="background: none; color: #000000; border: none">{{ forloop.counter }}</span></td>
+                    <td>
+                        <table>
+                            {# Дни недели #}
+                            <tr>
+                                <td><a href="{{ MEDIA_URL }}branch/{{ branch.id }}">{{ branch.descr }}</a>
+
+                                    <div id="format" class="format">
+                                        <input type="checkbox" id="id_monday_{{ branch.id }}"
+                                               name="monday_{{ branch.id }}"
+                                               {% if branch.monday == True %}checked="{{ branch.monday }}" {% endif %}/>
+                                        <label for="id_monday_{{ branch.id }}">Mn</label>
+                                        <input type="checkbox" id="id_tuesday_{{ branch.id }}"
+                                               name="tuesday_{{ branch.id }}"
+                                               {% if branch.tuesday == True %}checked="{{ branch.tuesday }}"{% endif %}/>
+                                        <label for="id_tuesday_{{ branch.id }}">Tu</label>
+                                        <input type="checkbox" id="id_wednesday_{{ branch.id }}"
+                                               name="wednesday_{{ branch.id }}"
+                                               {% if branch.wednesday == True %}checked="{{ branch.wednesday }}"{% endif %}/>
+                                        <label for="id_wednesday_{{ branch.id }}">Wd</label>
+                                        <input type="checkbox" id="id_thursday_{{ branch.id }}"
+                                               name="thursday_{{ branch.id }}"
+                                               {% if branch.thursday == True %}checked="{{ branch.thursday }}"{% endif %}/>
+                                        <label for="id_thursday_{{ branch.id }}">Th</label>
+                                        <input type="checkbox" id="id_friday_{{ branch.id }}"
+                                               name="friday_{{ branch.id }}"
+                                               {% if branch.friday == True %}checked="{{ branch.friday }}"{% endif %}/>
+                                        <label for="id_friday_{{ branch.id }}">Fr</label>
+                                        <input type="checkbox" id="id_saturday_{{ branch.id }}"
+                                               name="saturday_{{ branch.id }}"
+                                                {% if branch.saturday == True %}
+                                               checked="{{ branch.saturday }}"{% endif %}/>
+                                        <label for="id_saturday_{{ branch.id }}">St</label>
+                                        <input type="checkbox" id="id_sunday_{{ branch.id }}"
+                                               name="sunday_{{ branch.id }}"
+                                               {% if branch.sunday == True %}checked="{{ branch.sunday }}"{% endif %}/>
+                                        <label for="id_sunday_{{ branch.id }}">Su</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        {% with status=branch.status.descr %}
+                            {% if status == "Stopped" %}
+                                <img src="{{ STATIC_URL }}/images/stop1normal.png" width="35px" height="35px"/>
+                            {% elif status == "Running" %}
+                                <img src="{{ STATIC_URL }}/images/run.png" width="35px" height="35px"/>
+                            {% elif status == "Planned" %}
+                                <img src="{{ STATIC_URL }}/images/stepforwardnormal.png" width="35px" height="35px"/>
+                            {% elif status == "Not initialized" %}
+                                <img src="{{ STATIC_URL }}/images/close.png" width="35px" height="35px"/>
+                            {% endif %}
+                        {% endwith %}
+                    </td>
                     <td>
                         <div class="input-group clockpicker" data-autoclose="true" data-placement="left"
                              data-align="top">
                             <input id="id_t_start_plan_{{ branch.id }}" name="t_start_plan_{{ branch.id }}"
                                    value="{{ branch.t_start_plan |date:"H:i" }}"
-                                   size="7">
+                                   size="5">
                                             <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-time"></span>
                                             </span>
@@ -115,54 +174,27 @@ to: '{{ session.send|date:"H:i:s" }}'}
                              data-align="top">
                             <input id="id_t_end_plan_{{ branch.id }}" name="t_end_plan_{{ branch.id }}"
                                    value="{{ branch.t_end_plan |date:"H:i" }}"
-                                   size="7">
+                                   size="5">
                                             <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-time"></span>
                                             </span>
                         </div>
                     </td>
                     <td class="tableHead">
-                        <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
-                        <input type="text" value="{{ branch.duration | default:'0' }}" name="length_{{ branch.id }}"
-                               id="len_{{ branch.id }}" size="2"/>
-                        <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
-                        {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
-                        <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
-                        {#                    <div class="btn_red" name="stop" id="cmd_stop_{{ branch.id }}">Stop</div>#}
-                        <input type="button" name="on" id="cmd_on_{{ branch.id }}" value="On"/>
-                        <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Off"/>
-                    </td>
-                </tr>
-                {# Дни недели #}
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="format" class="format">
-                            <input type="checkbox" id="id_monday_{{ branch.id }}" name="monday_{{ branch.id }}"
-                                   {% if branch.monday == True %}checked="{{ branch.monday }}" {% endif %}/>
-                            <label for="id_monday_{{ branch.id }}">Mn</label>
-                            <input type="checkbox" id="id_tuesday_{{ branch.id }}" name="tuesday_{{ branch.id }}"
-                                   {% if branch.tuesday == True %}checked="{{ branch.tuesday }}"{% endif %}/>
-                            <label for="id_tuesday_{{ branch.id }}">Tu</label>
-                            <input type="checkbox" id="id_wednesday_{{ branch.id }}" name="wednesday_{{ branch.id }}"
-                                   {% if branch.wednesday == True %}checked="{{ branch.wednesday }}"{% endif %}/>
-                            <label for="id_wednesday_{{ branch.id }}">Wd</label>
-                            <input type="checkbox" id="id_thursday_{{ branch.id }}" name="thursday_{{ branch.id }}"
-                                   {% if branch.thursday == True %}checked="{{ branch.thursday }}"{% endif %}/>
-                            <label for="id_thursday_{{ branch.id }}">Th</label>
-                            <input type="checkbox" id="id_friday_{{ branch.id }}" name="friday_{{ branch.id }}"
-                                   {% if branch.friday == True %}checked="{{ branch.friday }}"{% endif %}/>
-                            <label for="id_friday_{{ branch.id }}">Fr</label>
-                            <input type="checkbox" id="id_saturday_{{ branch.id }}" name="saturday_{{ branch.id }}"
-                                    {% if branch.saturday == True %} checked="{{ branch.saturday }}"{% endif %}/>
-                            <label for="id_saturday_{{ branch.id }}">St</label>
-                            <input type="checkbox" id="id_sunday_{{ branch.id }}" name="sunday_{{ branch.id }}"
-                                   {% if branch.sunday == True %}checked="{{ branch.sunday }}"{% endif %}/>
-                            <label for="id_sunday_{{ branch.id }}">Su</label>
+                        <div id="ctr_btns">
+                            <input type="hidden" value="{{ branch.status.name }}" id="stat_{{ branch.id }}"/>
+                            <input type="text" value="{{ branch.duration | default:'0' }}" name="length_{{ branch.id }}"
+                                   id="len_{{ branch.id }}" size="2"/>
+                            <input type="button" name="start" id="cmd_start_{{ branch.id }}" value="Start"/>
+                            {#                    <div class="btn_blue" name="start" id="cmd_start_{{ branch.id }}">Start</div>#}
+                            <input type="button" name="stop" id="cmd_stop_{{ branch.id }}" value="Stop"/>
+                            {#                    <div class="btn_red" name="stop" id="cmd_stop_{{ branch.id }}">Stop</div>#}
+                            <input type="button" name="on" id="cmd_on_{{ branch.id }}" value="On"/>
+                            <input type="button" name="off" id="cmd_off_{{ branch.id }}" value="Off"/>
                         </div>
                     </td>
-                    <td colspan="4">&nbsp;</td>
                 </tr>
+
             {% endfor %}
             <tr>
                 <td colspan="6" align="right">
