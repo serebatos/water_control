@@ -74,10 +74,14 @@ to: '{{ session.send|date:"H:i:s" }}'}
                     stop.prop('disabled', true);
                 }
             });
+
+
+            $('#maintanence_tbl').DataTable();
+
         });
     </script>
     <style>
-        #format, #ctr_btns,#maint_save {
+        #format, #ctr_btns, #maint_save {
             font-size: 0.8em
         }
 
@@ -246,14 +250,22 @@ to: '{{ session.send|date:"H:i:s" }}'}
         <br/>
         <br/>
         <br/>
-        <table>
+        <table id="maintanence_tbl" class="display" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
             {% for ml in maintanence_log %}
                 <tr>
                     <td>{{ ml.maintanence.name }}</td>
-{#                    <td>{{ ml.work_description }}</td>#}
+                    {#                    <td>{{ ml.work_description }}</td>#}
                     <td>{{ ml.last_accessed|date:"H:i" }} {{ ml.last_accessed|date:"j\.n\.Y" }} </td>
                 </tr>
             {% endfor %}
+            </tbody>
         </table>
     {% endif %}
 

@@ -17,7 +17,7 @@ h2 {
 }
 
 #wrap {
-    width: 1150px;
+    width: 1350px;
     margin: 0 auto;
     background: #99c;
 }
@@ -52,7 +52,7 @@ h2 {
 
 #sidebar {
     float: right;
-    width: 310px;
+    width: 510px;
     padding: 10px;
     background: #99c;
 }

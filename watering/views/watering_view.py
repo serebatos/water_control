@@ -133,7 +133,7 @@ class WateringMain(TemplateView):
         branches = Branch.objects.all()
 
         # todo: last events for 3 month for example...
-        maintanence_log = Maintanence_log.objects.all().order_by('-last_accessed')
+        maintanence_log = list(Maintanence_log.objects.all().order_by('-last_accessed'))
         maintanence = Maintanence.objects.all()
 
         context['title'] = 'This is my app. It uses Django templates'
