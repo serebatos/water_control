@@ -2475,3 +2475,193 @@ error: [Errno 111] Connection refused
 [12/May/2015 21:05:44] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
 [12/May/2015 21:05:44] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
 [12/May/2015 21:05:44] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:41:17] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:85] Starting up on ('localhost', 10000)
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:99] 1:connection from ('127.0.0.1', 51204)
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7"}"
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[13/May/2015 19:41:17] CommandProcessorD INFO [cmd_processor:41] 1431546077.63 Processing: leg up, value: 7
+[13/May/2015 19:41:17] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[13/May/2015 19:41:17] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[13/May/2015 19:41:17] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"5"})
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:99] 2:connection from ('127.0.0.1', 51205)
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:104] Received "{"cmd":"leg up", "value": "7", "delay":"5"}"
+[13/May/2015 19:41:17] CommandProcessor INFO [cmd_processor:107] Command is 'leg up 7'
+[13/May/2015 19:41:17] CommandProcessorD INFO [cmd_processor:41] 1431546077.63 Processing: leg up, value: 7
+[13/May/2015 19:41:17] CommandProcessorD INFO [cmd_processor:48] Leg 7 was set to HIGH OUT
+[13/May/2015 19:41:22] CommandProcessorD INFO [cmd_processor:58] Returning leg 7 to LOW OUT
+[13/May/2015 19:41:22] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[13/May/2015 19:41:22] CommandProcessor INFO [cmd_processor:95] Waiting for a connection
+[13/May/2015 19:41:22] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[13/May/2015 19:41:22] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[13/May/2015 19:41:22] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[13/May/2015 19:41:22] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:41:47] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[13/May/2015 19:43:41] CommandProcessorD DEBUG [cmd_processor:39] Looking for the next command
+[13/May/2015 19:43:53] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:44:51] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:45:07] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:45:07] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 10000)
+[13/May/2015 19:45:07] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:48:57] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:48:57] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 10000)
+[13/May/2015 19:52:35] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:53:15] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:53:15] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 10000)
+[13/May/2015 19:53:37] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:53:37] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 10000)
+[13/May/2015 19:54:17] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:54:17] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 10000)
+[13/May/2015 19:55:07] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 22000)
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:100] 1:connection from ('127.0.0.1', 51286)
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "7"}"
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 7'
+[13/May/2015 19:55:07] CommandProcessorD INFO [cmd_processor:42] 1431546907.15 Processing: leg up, value: 7
+[13/May/2015 19:55:07] CommandProcessorD INFO [cmd_processor:49] Leg 7 was set to HIGH OUT
+[13/May/2015 19:55:07] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[13/May/2015 19:55:07] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"5"})
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:100] 2:connection from ('127.0.0.1', 51287)
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "7", "delay":"5"}"
+[13/May/2015 19:55:07] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 7'
+[13/May/2015 19:55:07] CommandProcessorD INFO [cmd_processor:42] 1431546907.15 Processing: leg up, value: 7
+[13/May/2015 19:55:07] CommandProcessorD INFO [cmd_processor:49] Leg 7 was set to HIGH OUT
+[13/May/2015 19:55:12] CommandProcessorD INFO [cmd_processor:59] Returning leg 7 to LOW OUT
+[13/May/2015 19:55:12] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:55:12] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[13/May/2015 19:55:12] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:55:12] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[13/May/2015 19:55:12] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[13/May/2015 19:55:12] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:55:20] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 22000)
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:100] 3:connection from ('127.0.0.1', 51289)
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "7"}"
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 7'
+[13/May/2015 19:55:20] CommandProcessorD INFO [cmd_processor:42] 1431546920.29 Processing: leg up, value: 7
+[13/May/2015 19:55:20] CommandProcessorD INFO [cmd_processor:49] Leg 7 was set to HIGH OUT
+[13/May/2015 19:55:20] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[13/May/2015 19:55:20] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7", "delay":"5"})
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:100] 4:connection from ('127.0.0.1', 51290)
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "7", "delay":"5"}"
+[13/May/2015 19:55:20] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 7'
+[13/May/2015 19:55:20] CommandProcessorD INFO [cmd_processor:42] 1431546920.29 Processing: leg up, value: 7
+[13/May/2015 19:55:20] CommandProcessorD INFO [cmd_processor:49] Leg 7 was set to HIGH OUT
+[13/May/2015 19:55:25] CommandProcessorD INFO [cmd_processor:59] Returning leg 7 to LOW OUT
+[13/May/2015 19:55:25] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:55:25] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:55:25] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"0\", \"result\":\"OK\"}"'
+[13/May/2015 19:55:25] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"0", "result":"OK"}'
+[13/May/2015 19:55:25] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[13/May/2015 19:55:25] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[13/May/2015 19:56:09] MainThread INFO [job_manager:78] Trava is goin to start. Plan start time - (19:56:00), Current time - (19:56:09.063305)
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:100] 5:connection from ('127.0.0.1', 51317)
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "9"}"
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 9'
+[13/May/2015 19:56:09] CommandProcessorD INFO [cmd_processor:42] 1431546969.11 Processing: leg up, value: 9
+[13/May/2015 19:56:09] CommandProcessorD INFO [cmd_processor:49] Leg 9 was set to HIGH OUT
+[13/May/2015 19:56:09] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:56:09] MainThread INFO [job_manager:132] Result: OK
+[13/May/2015 19:56:09] MainThread INFO [job_manager:134] Command is completed successfully!
+[13/May/2015 19:56:09] MainThread INFO [job_manager:138] Trava is running now
+[13/May/2015 19:56:09] MainThread INFO [job_manager:140] 1 branches processed
+[13/May/2015 19:56:09] MainThread INFO [job_manager:98] Trava is going to stop. Plan stop time - 19:32:00, Current tiem - 19:56:09.118808
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:100] 6:connection from ('127.0.0.1', 51318)
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg down", "value": "9"}"
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:108] Command is 'leg down 9'
+[13/May/2015 19:56:09] CommandProcessorD INFO [cmd_processor:42] 1431546969.19 Processing: leg down, value: 9
+[13/May/2015 19:56:09] CommandProcessorD INFO [cmd_processor:53] Leg 9 was set to LOW OUT
+[13/May/2015 19:56:09] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:56:09] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:56:09] MainThread INFO [job_manager:156] Command is completed successfully!
+[13/May/2015 19:56:09] MainThread INFO [job_manager:160] Trava is stopped
+[13/May/2015 19:56:19] MainThread INFO [job_manager:78] Trava is goin to start. Plan start time - (19:56:00), Current time - (19:56:19.204962)
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:100] 7:connection from ('127.0.0.1', 51320)
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "9"}"
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 9'
+[13/May/2015 19:56:19] CommandProcessorD INFO [cmd_processor:42] 1431546979.26 Processing: leg up, value: 9
+[13/May/2015 19:56:19] CommandProcessorD INFO [cmd_processor:49] Leg 9 was set to HIGH OUT
+[13/May/2015 19:56:19] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:56:19] MainThread INFO [job_manager:132] Result: OK
+[13/May/2015 19:56:19] MainThread INFO [job_manager:134] Command is completed successfully!
+[13/May/2015 19:56:19] MainThread INFO [job_manager:138] Trava is running now
+[13/May/2015 19:56:19] MainThread INFO [job_manager:140] 1 branches processed
+[13/May/2015 19:56:19] MainThread INFO [job_manager:98] Trava is going to stop. Plan stop time - 19:32:00, Current tiem - 19:56:19.265999
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:100] 8:connection from ('127.0.0.1', 51321)
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg down", "value": "9"}"
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:108] Command is 'leg down 9'
+[13/May/2015 19:56:19] CommandProcessorD INFO [cmd_processor:42] 1431546979.32 Processing: leg down, value: 9
+[13/May/2015 19:56:19] CommandProcessorD INFO [cmd_processor:53] Leg 9 was set to LOW OUT
+[13/May/2015 19:56:19] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:56:19] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:56:19] MainThread INFO [job_manager:156] Command is completed successfully!
+[13/May/2015 19:56:19] MainThread INFO [job_manager:160] Trava is stopped
+[13/May/2015 19:57:09] MainThread INFO [job_manager:78] Trava is goin to start. Plan start time - (19:57:00), Current time - (19:57:09.416855)
+[13/May/2015 19:57:09] CommandProcessor INFO [cmd_processor:100] 9:connection from ('127.0.0.1', 51325)
+[13/May/2015 19:57:09] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "9"}"
+[13/May/2015 19:57:09] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 9'
+[13/May/2015 19:57:09] CommandProcessorD INFO [cmd_processor:42] 1431547029.47 Processing: leg up, value: 9
+[13/May/2015 19:57:09] CommandProcessorD INFO [cmd_processor:49] Leg 9 was set to HIGH OUT
+[13/May/2015 19:57:09] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 19:57:09] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 19:57:09] MainThread INFO [job_manager:132] Result: OK
+[13/May/2015 19:57:09] MainThread INFO [job_manager:134] Command is completed successfully!
+[13/May/2015 19:57:09] MainThread INFO [job_manager:138] Trava is running now
+[13/May/2015 19:57:09] MainThread INFO [job_manager:140] 1 branches processed
+[13/May/2015 20:05:00] MainThread INFO [job_manager:98] Trava is going to stop. Plan stop time - 20:05:00, Current tiem - 20:05:00.241336
+[13/May/2015 20:05:00] CommandProcessor INFO [cmd_processor:100] 10:connection from ('127.0.0.1', 51408)
+[13/May/2015 20:05:00] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg down", "value": "9"}"
+[13/May/2015 20:05:00] CommandProcessor INFO [cmd_processor:108] Command is 'leg down 9'
+[13/May/2015 20:05:00] CommandProcessorD INFO [cmd_processor:42] 1431547500.3 Processing: leg down, value: 9
+[13/May/2015 20:05:00] CommandProcessorD INFO [cmd_processor:53] Leg 9 was set to LOW OUT
+[13/May/2015 20:05:00] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 20:05:00] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 20:05:00] MainThread INFO [job_manager:156] Command is completed successfully!
+[13/May/2015 20:05:00] MainThread INFO [job_manager:160] Trava is stopped
+[13/May/2015 20:20:01] MainThread INFO [job_manager:78] Another is goin to start. Plan start time - (20:20:00), Current time - (20:20:01.743738)
+[13/May/2015 20:20:01] CommandProcessor INFO [cmd_processor:100] 11:connection from ('127.0.0.1', 51513)
+[13/May/2015 20:20:01] CommandProcessor INFO [cmd_processor:105] Received "{"cmd":"leg up", "value": "7"}"
+[13/May/2015 20:20:01] CommandProcessor INFO [cmd_processor:108] Command is 'leg up 7'
+[13/May/2015 20:20:01] CommandProcessorD INFO [cmd_processor:42] 1431548401.8 Processing: leg up, value: 7
+[13/May/2015 20:20:01] CommandProcessorD INFO [cmd_processor:49] Leg 7 was set to HIGH OUT
+[13/May/2015 20:20:01] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[13/May/2015 20:20:01] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[13/May/2015 20:20:01] MainThread INFO [job_manager:132] Result: OK
+[13/May/2015 20:20:01] MainThread INFO [job_manager:134] Command is completed successfully!
+[13/May/2015 20:20:01] MainThread INFO [job_manager:138] Another is running now
+[13/May/2015 20:20:01] MainThread INFO [job_manager:140] 1 branches processed

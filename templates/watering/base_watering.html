@@ -77,7 +77,7 @@ to: '{{ session.send|date:"H:i:s" }}'}
         });
     </script>
     <style>
-        #format, #ctr_btns {
+        #format, #ctr_btns,#maint_save {
             font-size: 0.8em
         }
 
@@ -240,7 +240,7 @@ to: '{{ session.send|date:"H:i:s" }}'}
                     <option value="{{ m.name }}">
                 {% endfor %}
             </datalist>
-            <input type="submit" value="Save"/>
+            <input type="submit" id="maint_save" value="Save"/>
         </form>
         <br/>
         <br/>
@@ -250,8 +250,8 @@ to: '{{ session.send|date:"H:i:s" }}'}
             {% for ml in maintanence_log %}
                 <tr>
                     <td>{{ ml.maintanence.name }}</td>
-                    <td>{{ ml.work_description }}</td>
-                    <td>{{ ml.last_accessed }}</td>
+{#                    <td>{{ ml.work_description }}</td>#}
+                    <td>{{ ml.last_accessed|date:"H:i" }} {{ ml.last_accessed|date:"j\.n\.Y" }} </td>
                 </tr>
             {% endfor %}
         </table>

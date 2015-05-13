@@ -7,6 +7,7 @@
 # todo: , 2. Возвращать ответ в случае ошибки или невозможности, 3.
 import logging
 import threading
+from types import NoneType
 
 __author__ = 'Serebatos'
 import json
@@ -78,12 +79,12 @@ class CommandProcessor:
     # Create a TCP/IP socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    # Bind the socket to the port
-    server_address = ('localhost', 10000)
 
-    def initialize(self):
-        logger.info('Starting up on %s', self.server_address)
-        self.sock.bind(self.server_address)
+    def initialize(self, host, port):
+        # Bind the socket to the port
+        server_address = (host, port)
+        logger.info('Starting up on %s', server_address)
+        self.sock.bind(server_address)
         # Liten for incoming connections
         self.sock.listen(1)
 
@@ -132,9 +133,13 @@ class CommandProcessor:
                 # time.sleep(4)
         logger.info("Shutting down")
 
-    def start(self, stop_event):
+    def start(self, stop_event, host='localhost', port=10000):
         threading.currentThread().name = "CommandProcessor"
-        self.initialize()
+        self.initialize(host, port)
         if not stop_event:
             stop_event = threading.Event()
         self.serve(stop_event)
+
+if __name__ == '__main__':
+    cp = CommandProcessor()
+    cp.start(threading.Event())

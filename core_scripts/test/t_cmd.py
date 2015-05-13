@@ -12,7 +12,7 @@ __author__ = 'bonecrusher'
 
 def thread(arg1, event):
     c = CommandProcessor()
-    c.start(event)
+    c.start(event,host='localhost', port=22000)
 
 
 class CommandTestCase(unittest.TestCase):
