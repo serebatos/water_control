@@ -12,10 +12,13 @@ __author__ = 'bonecrusher'
 
 def thread(arg1, event):
     c = CommandProcessor()
-    c.start(event,host='localhost', port=22000)
+    c.start(event, host=CommandTestCase.host, port=CommandTestCase.port)
 
 
 class CommandTestCase(unittest.TestCase):
+    host = 'localhost'
+    port = 22000
+
     @classmethod
     def setUpClass(cls):
         print("Setup")
@@ -30,7 +33,7 @@ class CommandTestCase(unittest.TestCase):
 
     def test_send_set(self):
         i_cmd = CommandInner(Command.CMD_SET, self.leg)
-        result = CommandSender.send(i_cmd)
+        result = CommandSender.send(i_cmd, host=self.host, port=self.port)
         self.assertIsNotNone(result, "Result is null")
         self.assertEqual(Command.CMD_SET, result.operation, 'Operation is wrong')
         self.assertEqual(str(self.leg), result.leg, 'Leg is wrong')

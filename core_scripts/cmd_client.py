@@ -11,12 +11,12 @@ class CommandSender():
     logger = logging.getLogger(__name__)
 
     @staticmethod
-    def send(i_cmd):
+    def send(i_cmd, host='localhost', port=10000):
         # Create a TCP/IP socket
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         # Connect the socket to the port where the server is listening
-        server_address = ('localhost', 10000)
+        server_address = (host, port)
         CommandSender.logger.info('---------------------------------')
         CommandSender.logger.info('Connecting to %s', server_address)
         res = None
