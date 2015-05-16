@@ -34,6 +34,8 @@ class WateringMain(TemplateView):
     def post(self, request):
         post_data = request.POST
         key = "maintanence_inp"
+
+        # получаем обсулживаемый элемент из БД
         if post_data.has_key(key):
             value = post_data[key]
             if len(value):
@@ -43,7 +45,14 @@ class WateringMain(TemplateView):
                     m.save()
                 else:
                     m = m_list[0]
-                ml = Maintanence_log(maintanence=m, work_description='Test', last_accessed=datetime.now())
+
+                # что делали
+                key = "maintanence_work_inp"
+                if post_data.has_key(key):
+                    work_descr = post_data[key]
+
+                # пишем в базу
+                ml = Maintanence_log(maintanence=m, work_description=work_descr, last_accessed=datetime.now())
                 ml.save()
         else:
             branches = Branch.objects.all()
