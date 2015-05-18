@@ -17,6 +17,9 @@ import logging
 django.setup()
 print(django.VERSION)
 
+# todo: Далекое туду. Надо при планировании полива генерить инстанс джоба по тем настройкам, которые для ветки сделаны
+# и уже по ним JobManager'ом отрабатывать. сразу получим логирование запусков
+
 
 class JobManager():
     # just created branches
@@ -51,9 +54,45 @@ class JobManager():
     # сам джоб
     def execute(self):
         # self.logger.info('checking branches which are planned')
-        branches_to_run = []
+
+        # Получаем все, что готово к запуску
+        branches_to_run = self.get_branches_to_run()
+        # непосредственно запуск того, что отобрали
+
+
+        # Получаем все, что готово к остановке
+        branches_to_stop = self.get_branches_to_stop()
+        # останавливаем и переводим в статус снова запланирванных
+        self.end_branch(branches_to_stop)
+        self.run_branch(branches_to_run)
+
+
+    # ищем все, что запланировано к остановке
+    def get_branches_to_stop(self):
         branches_to_stop = []
-        # ищем все, что запланировано и если пришло время - запускаем
+        # смотрим работающие ветки, если пришло время - останавливаем полив и ветку заново в статус Запланировано
+        # , тут без допустимых интервалов все ок
+        for running_branch in self.running_branches:
+            if running_branch.t_end_plan:
+                t_curr = datetime.datetime.now()
+                # пора останавливать?
+                need_to_end = t_curr.time() > running_branch.t_end_plan
+
+                # пришло время - в список на остановку
+                if need_to_end:
+                    self.logger.info("%s is going to stop. Plan stop time - %s, Current tiem - %s",
+                                     running_branch.descr,
+                                     running_branch.t_end_plan, t_curr.time())
+                    # Ветки для остановки
+                    branches_to_stop.append(running_branch)
+            else:
+                self.logger.error("%s has empty t_end_plan!", running_branch.descr)
+        return branches_to_stop
+
+
+    # ищем все, что запланировано к запуску
+    def get_branches_to_run(self):
+        branches_to_run = []
         for planned_branch in self.planned_branches:
             t_curr = datetime.datetime.now()
             if planned_branch.t_start_plan:
@@ -73,37 +112,16 @@ class JobManager():
                 interval_is_allowed = t_delta < self.allowed_interval
                 # если наступило время и мы в допустимом интервале, добавляем в список веток, подлежащих запуску
                 if time_is_come and interval_is_allowed:
-                    self.logger.info("%s is goin to start. Plan start time - (%s), Current time - (%s)",
+                    self.logger.info("*****")
+                    self.logger.info("%s is going to start. Plan start time - (%s), Current time - (%s)",
                                      planned_branch.descr,
                                      planned_branch.t_start_plan, t_curr.time())
+                    # ветки для запуска
                     branches_to_run.append(planned_branch)
             else:
                 self.logger.warning("Planned Branch %s has empty t_start_plan")
+        return branches_to_run
 
-        # непосредственно запуск того, что отобрали
-        self.run_branch(branches_to_run)
-
-        # смотрим работающие ветки, если пришло время - останавливаем полив и ветку заново в статус Запланировано
-        # , тут без допустимых интервалов все ок
-        for running_branch in self.running_branches:
-            if running_branch.t_end_plan:
-                t_curr = datetime.datetime.now()
-                # пора останавливать?
-                need_to_end = t_curr.time() > running_branch.t_end_plan
-
-                # пришло время - в список на остановку
-                if need_to_end:
-                    self.logger.info("%s is going to stop. Plan stop time - %s, Current tiem - %s",
-                                     running_branch.descr,
-                                     running_branch.t_end_plan, t_curr.time())
-                    branches_to_stop.append(running_branch)
-            else:
-                self.logger.error("%s has EMPTY t_end_plan!", running_branch.descr)
-        # останавливаем и переводим в статус снова запланирванных
-        self.end_branch(branches_to_stop)
-
-        # if not branches_to_run and not branches_to_stop:
-        # self.logger.info("Nothing to stop/start!")
 
     # перевод статуса из PLANNED в RUNNING. Тут же надо дернуть ногу
     # todo: непосредственно дернуть ногой и тут и при остановке
