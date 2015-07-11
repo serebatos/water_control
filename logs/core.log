@@ -3137,3 +3137,53 @@ error: [Errno 111] Connection refused
 [18/May/2015 21:25:09] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
 [18/May/2015 21:25:09] MainThread INFO [job_manager:173] Command is completed successfully!
 [18/May/2015 21:25:09] MainThread INFO [job_manager:177] Trava is stopped
+[27/Jun/2015 20:18:31] CommandProcessorD DEBUG [cmd_processor:40] Looking for the next command
+[27/Jun/2015 20:18:31] CommandProcessor INFO [cmd_processor:86] Starting up on ('localhost', 22000)
+[27/Jun/2015 20:18:31] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[27/Jun/2015 20:18:31] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 22000)
+[27/Jun/2015 20:18:31] CommandProcessor INFO [cmd_processor:96] Waiting for a connection
+[27/Jun/2015 20:18:31] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[27/Jun/2015 20:18:31] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[27/Jun/2015 20:18:31] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[27/Jun/2015 20:18:31] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[27/Jun/2015 20:53:46] CommandProcessorD DEBUG [cmd_processor:41] Looking for the next command
+[27/Jun/2015 20:53:46] CommandProcessor INFO [cmd_processor:89] Starting up on ('localhost', 22000)
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 22000)
+[27/Jun/2015 20:53:46] CommandProcessor INFO [cmd_processor:99] Waiting for a connection
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:30] Sending command ({"cmd":"leg up", "value": "7"})
+[27/Jun/2015 20:53:46] CommandProcessor INFO [cmd_processor:103] 1:connection from ('127.0.0.1', 54216)
+[27/Jun/2015 20:53:46] CommandProcessor INFO [cmd_processor:108] Received "{"cmd":"leg up", "value": "7"}"
+[27/Jun/2015 20:53:46] CommandProcessor INFO [cmd_processor:111] Command is 'leg up 7'
+[27/Jun/2015 20:53:46] CommandProcessorD INFO [cmd_processor:43] 1435438426.09 Processing: leg up, value: 7
+[27/Jun/2015 20:53:46] CommandProcessorD INFO [cmd_processor:51] Leg 7 was set to HIGH OUT
+[27/Jun/2015 20:53:46] CommandProcessorD DEBUG [cmd_processor:41] Looking for the next command
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:38] Got answer, raw data '"{\"operation\":\"leg up\", \"leg\":\"7\", \"value\":\"1\", \"result\":\"OK\"}"'
+[27/Jun/2015 20:53:46] CommandProcessor INFO [cmd_processor:99] Waiting for a connection
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:42] Response '{"operation":"leg up", "leg":"7", "value":"1", "result":"OK"}'
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:43] Response length is 61
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:46] Received "leg up is OK"
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:20] ---------------------------------
+[27/Jun/2015 20:53:46] MainThread INFO [core_scripts.cmd_client:21] Connecting to ('localhost', 10000)
+[27/Jun/2015 20:53:46] MainThread ERROR [core_scripts.cmd_client:49] [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/bonecrusher/PycharmProjects/water_control/core_scripts/cmd_client.py", line 24, in send
+    sock.connect(server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[07/Jul/2015 18:43:38] CommandProcessorD DEBUG [cmd_processor:46] Looking for the next command
+[07/Jul/2015 18:43:38] CommandProcessor INFO [cmd_processor:94] Starting up on ('localhost', 10000)
+[07/Jul/2015 18:43:38] CommandProcessor INFO [cmd_processor:104] Waiting for a connection

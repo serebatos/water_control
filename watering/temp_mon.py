@@ -38,7 +38,10 @@ def read_temp():  # a function that checks that the connection was good and stri
 
 def get_devices():
     # for dev in device_folder:
-    # pos = dev.rfind('/') + 1
+    #     pos = dev.rfind('/') + 1
     #     dev_list.append(dev[pos:])
     return dev_list
 
+
+if __name__ == '__main__':
+    print(read_temp())

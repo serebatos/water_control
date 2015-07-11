@@ -29,15 +29,27 @@ class Valve():
     # time to open\close, sec
     open_time = 5
 
+    PIN_VALVE_REAR = 12
+    PIN_VALVE_LEFT = 11
+    PIN_VALVE_RIGHT = 22
+
     def __init__(self):
         self.logger = logging.getLogger('valve')
         # who cares?))
-        # GPIO.setwarnings(False)
+        GPIO.setwarnings(False)
         # setup our mode and pins
         GPIO.setmode(GPIO.BOARD)
         # set up GPIO output channel
         GPIO.setup(self.PIN_POWER_RELAY, GPIO.OUT)
+        self.set_low(self.PIN_POWER_RELAY)
         GPIO.setup(self.PIN_MOTOR_RELAY, GPIO.OUT)
+        self.set_low(self.PIN_MOTOR_RELAY)
+        GPIO.setup(self.PIN_VALVE_REAR, GPIO.OUT)
+        self.set_low(self.PIN_VALVE_REAR)
+        GPIO.setup(self.PIN_VALVE_LEFT, GPIO.OUT)
+        self.set_low(self.PIN_VALVE_LEFT)
+        GPIO.setup(self.PIN_VALVE_RIGHT, GPIO.OUT)
+        self.set_low(self.PIN_VALVE_RIGHT)
         GPIO.setup(self.PIN_OPEN_SIGNAL, GPIO.IN)
         GPIO.setup(self.PIN_CLOSE_SIGNAL, GPIO.IN)
 
@@ -58,46 +70,47 @@ class Valve():
         pass
 
     def open(self):
-        self.log("Opening valve")
+        self.log("Opening Hydrant")
         # Смотрим текущее состояние(есть траблы с точностью его определения)
-        if not self.is_opened():
-            self.log("Valve is not opened")
-            # Добавляем обработчик сигнала полного открытия клапана, чтобы сразу после открытия выключить реле
-            GPIO.add_event_detect(self.PIN_OPEN_SIGNAL, GPIO.FALLING, callback=self.on_open, bouncetime=600)
-            # Сначала переключаем управляющее реле электромотора в режим ОТКРЫТИЯ
-            self.set_low(self.PIN_MOTOR_RELAY)
-            # даем релюшкам время для переключения
-            time.sleep(Valve.RELAY_SWITCH_TIME)
-            # включаем электромотор
-            self.power_on()
-            # работаем сколько нужно для полного открытия клапана плюс запас
-            time.sleep(self.open_time)
-            # Проверяем, было ли отключено питание по сигналу, нет - отключаем сами
-            self.checked_power_off()
-            self.log("Valve opened")
-            # GPIO.remove_event_detect(self.PIN_OPEN_SIGNAL)
-        else:
-            self.log("Valve is already opened")
+        # if not self.is_opened():
+        self.log("Hydrant is not opened")
+        # Добавляем обработчик сигнала полного открытия клапана, чтобы сразу после открытия выключить реле
+        # GPIO.add_event_detect(self.PIN_OPEN_SIGNAL, GPIO.FALLING, callback=self.on_open, bouncetime=600)
+        # Сначала переключаем управляющее реле электромотора в режим ОТКРЫТИЯ
+        self.set_low(self.PIN_MOTOR_RELAY)
+        # даем релюшкам время для переключения
+        time.sleep(Valve.RELAY_SWITCH_TIME)
+        # включаем электромотор
+        self.power_on()
+        # работаем сколько нужно для полного открытия клапана плюс запас
+        time.sleep(self.open_time)
+        # Проверяем, было ли отключено питание по сигналу, нет - отключаем сами
+        self.checked_power_off()
+        self.log("Hydrant opened")
+        # GPIO.remove_event_detect(self.PIN_OPEN_SIGNAL)
+        # else:
+        # self.log("Valve is already opened")
 
     def close(self):
-        self.log("Closing valve")
-        if not self.is_closed():
-            self.log("Valve is not closed")
-            GPIO.add_event_detect(self.PIN_CLOSE_SIGNAL, GPIO.FALLING, callback=self.on_close, bouncetime=600)
-            # Сначала переключаем управляющее реле электромотора в режим ЗАКРЫТИЯ
-            self.set_high(self.PIN_MOTOR_RELAY)
-            # даем релюшкам время для переключения
-            time.sleep(Valve.RELAY_SWITCH_TIME)
-            # подаем напругу через реле питания
-            self.power_on()
-            # работаем сколько нужно для полного закрытия клапана плюс запас
-            time.sleep(self.open_time)
-            # Проверяем, было ли отключено питание по сигналу, нет - отключаем сами
-            self.checked_power_off()
-            self.log("Valve closed")
-        else:
-            self.log("Valve is already closed")
-            # GPIO.remove_event_detect(self.PIN_CLOSE_SIGNAL)
+        self.log("Closing Hydrant")
+        # if not self.is_closed():
+        self.log("Hydrant is not closed")
+        # GPIO.add_event_detect(self.PIN_CLOSE_SIGNAL, GPIO.FALLING, callback=self.on_close, bouncetime=600)
+        # Сначала переключаем управляющее реле электромотора в режим ЗАКРЫТИЯ
+        self.set_high(self.PIN_MOTOR_RELAY)
+        # даем релюшкам время для переключения
+        time.sleep(Valve.RELAY_SWITCH_TIME)
+        # подаем напругу через реле питания
+        self.power_on()
+        # работаем сколько нужно для полного закрытия клапана плюс запас
+        time.sleep(self.open_time)
+        # Проверяем, было ли отключено питание по сигналу, нет - отключаем сами
+        self.checked_power_off()
+        self.set_low(Valve.PIN_MOTOR_RELAY)
+        self.log("Hydrant closed")
+        # else:
+        # self.log("Valve is already closed")
+        # GPIO.remove_event_detect(self.PIN_CLOSE_SIGNAL)
 
     def power_on(self):
         self.log("Power on")
@@ -125,7 +138,7 @@ class Valve():
     def on_close(self, channel):
         if int(GPIO.input(self.PIN_CLOSE_SIGNAL)) == 0:
             self.log(
-                "Valve is REALLY closed(channel %s)" % str(channel))
+                "Hydrant is REALLY closed(channel %s)" % str(channel))
             if self.power == Valve.ON:
                 time.sleep(0.5)
                 self.power_off()
@@ -134,7 +147,7 @@ class Valve():
     def on_open(self, channel):
         if int(GPIO.input(self.PIN_OPEN_SIGNAL)) == 0:
             self.log(
-                "Valve is REALLY opened(channel %s)" % str(channel))
+                "Hydrant is REALLY opened(channel %s)" % str(channel))
             if self.power == Valve.ON:
                 time.sleep(0.5)
                 self.power_off()
@@ -148,7 +161,7 @@ class Valve():
     def get_current_state(self):
         res = 0
         if self.is_closed():
-            res += 1
+            res += 2
         if self.is_opened():
             res += 1
         return res
@@ -158,29 +171,95 @@ class Valve():
             s = s % arg
         self.logger.error(s)
 
+    def start_watering(self, leg):
+        print("Open valve")
+        self.set_high(leg)
+        if not self.get_current_state() == 1:
+            print("Open hydrant")
+            self.open()
+
+    def stop_watering(self, leg):
+        if not self.get_current_state() == 2:
+            print("Close hydrant")
+            self.close()
+        print("Close valve")
+        self.set_low(leg)
+
 
 if __name__ == '__main__':
     cr = Valve()
-    print("Current state: %s" % cr.get_current_state())
-    time.sleep(2)
-    cr.open()
-    # print("Set 16 to high")
-    # GPIO.setmode(GPIO.BOARD)
-    # GPIO.setup(16, GPIO.OUT)
-    # GPIO.output(16, GPIO.HIGH)
-    time.sleep(2)
-    cr.close()
+
+    if len(sys.argv) > 1:
+        command = sys.argv[1]
+        if len(sys.argv) > 2:
+            area = sys.argv[2]
+        print("Current state: %s" % cr.get_current_state())
+        if command == "open":
+            cr.open()
+        elif command == "close":
+            cr.close()
+        elif command == "state":
+            if cr.get_current_state() == 2:
+                print("Hydrant is closed")
+            elif cr.get_current_state() == 1:
+                print("Hydrant is opened")
+            elif cr.get_current_state() == 3:
+                print("Hydrant is strange state...")
+
+        elif command == "rear start":
+            print("Open hydrant")
+            cr.open()
+            print("Open valve")
+            cr.set_high(cr.PIN_VALVE_REAR)
+        elif command == "rear stop":
+            print("Close valve")
+            cr.set_low(cr.PIN_VALVE_REAR)
+            print("Close hydrant")
+            cr.close()
+
+        elif command == "left start":
+            if not cr.get_current_state() == 1:
+                print("Open hydrant")
+                cr.open()
+            print("Open valve")
+            cr.set_high(cr.PIN_VALVE_LEFT)
+        elif command == "left stop":
+            print("Close valve")
+            cr.set_low(cr.PIN_VALVE_LEFT)
+            if not cr.get_current_state() == 2:
+                print("Close hydrant")
+                cr.close()
 
 
 
-    # to use Raspberry Pi board pin numbers
-    # pin = 16
-    # delay = 2
-    # print 'Delay is:', delay
-    # GPIO.setmode(GPIO.BOARD)
-    # # set up GPIO output channel
-    # GPIO.setup(pin, GPIO.OUT)
-    # # blink GPIO17 50 times
-    # for i in range(0, 20):
-    # blink(pin, delay, cr)
-    # GPIO.cleanup(pin)
+        else:
+            print("Usage:todo")
+    else:
+        print("Usage:todo")
+        # time.sleep(2)
+        # cr.open()
+        # print("Set 16 to high")
+        # GPIO.setmode(GPIO.BOARD)
+        # GPIO.setup(16, GPIO.OUT)
+        # GPIO.output(16, GPIO.HIGH)
+        # time.sleep(5)
+        # cr.close()
+        # GPIO.cleanup(Valve.PIN_POWER_RELAY)
+        # GPIO.cleanup(Valve.PIN_CLOSE_SIGNAL)
+        # GPIO.cleanup(Valve.PIN_MOTOR_RELAY)
+        # GPIO.cleanup(Valve.PIN_OPEN_SIGNAL)
+
+
+
+
+        # to use Raspberry Pi board pin numbers
+        # pin = 16
+        # delay = 2
+        # print 'Delay is:', delay
+        # GPIO.setmode(GPIO.BOARD)
+        # # set up GPIO output channel
+        # GPIO.setup(pin, GPIO.OUT)
+        # # blink GPIO17 50 times
+        # for i in range(0, 20):
+        # blink(pin, delay, cr)
+        # GPIO.cleanup(pin)

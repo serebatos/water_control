@@ -209,10 +209,10 @@ to: '{{ session.send|date:"H:i:s" }}'}
         </table>
 
     </form>
-    <div id="timeline" style="width: 620px; height: 380px;"></div>
+    {#    <div id="timeline" style="width: 620px; height: 380px;"></div>#}
 {% endblock %}
 {% block sidebar %}
-    <h2>Инфо</h2>
+    <h2>Инфо</h2>{% now "H:i j\.n\.Y" %}
     <p></p>
     {% if temp_result %}
         <table>
@@ -238,62 +238,62 @@ to: '{{ session.send|date:"H:i:s" }}'}
         <br/>
         <br/>
         <br/>
-        <h2>События</h2>
-        <p></p>
-
-        <form method="POST" action="" id="maint_form">
-            {% csrf_token %}
-            <table>
-                <tr>
-                    <td>
-                        <label for="maintanence_inp">Обслуживался:</label>
-                    </td>
-                    <td>
-                        <input list="maintanence_dl_id" name="maintanence_inp" id="maintanence_inp">
-                        <datalist id="maintanence_dl_id" name="maintanence_dl_name">
-                            {% for m in maintanence %}
-                                <option value="{{ m.name }}">
-                            {% endfor %}
-                        </datalist>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="maintanence_inp">Работы:</label>
-                    </td>
-                    <td>
-                        <input list="maintanence_work_dl_id" name="maintanence_work_inp" id="maintanence_work_inp"
-                               value="Замена">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" id="maint_save" value="Save"/>
-                    </td>
-                </tr>
-            </table>
-        </form>
-        <br/>
-        <br/>
-        <table id="maintanence_tbl" class="display" cellspacing="0" width="100%">
-            <thead>
-            <tr>
-                <th>Что</th>
-                <th>Как</th>
-                <th>Когда</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for ml in maintanence_log %}
-                <tr>
-                    <td>{{ ml.maintanence.name }}</td>
-                    <td>{{ ml.work_description }}</td>
-                    <td>{{ ml.last_accessed|date:"H:i" }} {{ ml.last_accessed|date:"j\.n\.Y" }} </td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
     {% endif %}
+    <h2>События</h2>
+    <p></p>
+
+    <form method="POST" action="" id="maint_form">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    <label for="maintanence_inp">Обслуживался:</label>
+                </td>
+                <td>
+                    <input list="maintanence_dl_id" name="maintanence_inp" id="maintanence_inp">
+                    <datalist id="maintanence_dl_id" name="maintanence_dl_name">
+                        {% for m in maintanence %}
+                            <option value="{{ m.name }}">
+                        {% endfor %}
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="maintanence_inp">Работы:</label>
+                </td>
+                <td>
+                    <input list="maintanence_work_dl_id" name="maintanence_work_inp" id="maintanence_work_inp"
+                           value="Замена">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id="maint_save" value="Save"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <br/>
+    <table id="maintanence_tbl" class="display" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th>Что</th>
+            <th>Как</th>
+            <th>Когда</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for ml in maintanence_log %}
+            <tr>
+                <td>{{ ml.maintanence.name }}</td>
+                <td>{{ ml.work_description }}</td>
+                <td>{{ ml.last_accessed|date:"H:i" }} {{ ml.last_accessed|date:"j\.n\.Y" }} </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 
 {% endblock %}
 {% block footer %}

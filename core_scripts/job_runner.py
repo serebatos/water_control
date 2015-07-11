@@ -2,10 +2,11 @@ import time
 from job_manager import JobManager
 __author__ = 'bonecrusher'
 
-for i in range(1, 2000):
-    job = JobManager()
+# for i in range(1, 2000):
+while True:
+    jm = JobManager()
     # print(i)
-    job.init()
-    job.execute()
-    time.sleep(10)
+    jm.init()
+    jm.execute()
+    time.sleep(20)
 

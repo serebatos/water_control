@@ -6,6 +6,11 @@ from command import Command, CommandInner
 __author__ = 'bonecrusher'
 
 import os
+import sys
+
+
+# sys.path.insert(0,'/home/pi/dev/remote/water_control/')
+# sys.path.append('/home/pi/dev/remote/')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "water_control.settings")
 
@@ -76,10 +81,10 @@ class JobManager():
             if running_branch.t_end_plan:
                 t_curr = datetime.datetime.now()
                 # пора останавливать?
-                need_to_end = t_curr.time() > running_branch.t_end_plan
+                time_is_come = t_curr.time() > running_branch.t_end_plan
 
                 # пришло время - в список на остановку
-                if need_to_end:
+                if time_is_come and self.is_in_allowed_interval(running_branch.t_end_plan):
                     self.logger.info("%s is going to stop. Plan stop time - %s, Current tiem - %s",
                                      running_branch.descr,
                                      running_branch.t_end_plan, t_curr.time())
@@ -105,11 +110,8 @@ class JobManager():
                 # это мы пропустили запуск - надо запустить. А это не верно.
                 # таким образом, если прослоупочили запуск более чем контрольный интервал(настраивается), то терпим до
                 # следующего дня запуска. пока так возможно что-то можно еще придумать
-                t_delta = datetime.datetime.combine(t_curr.date(), t_curr.time()) - datetime.datetime.combine(
-                    t_curr.date(),
-                    planned_branch.t_start_plan)
                 # собственно, проверям, попадаем ли мы в разрешенный интервал опоздания запуска
-                interval_is_allowed = t_delta < self.allowed_interval
+                interval_is_allowed = interval_is_allowed(planned_branch.t_start_plan)
                 # если наступило время и мы в допустимом интервале, добавляем в список веток, подлежащих запуску
                 if time_is_come and interval_is_allowed:
                     self.logger.info("*****")
@@ -156,6 +158,12 @@ class JobManager():
             self.logger.info('%s is running now', branch.descr)
         if branch_list:
             self.logger.info('%s branches processed', len(branch_list))
+
+    def is_in_allowed_interval(self, plan_time):
+        t_curr = datetime.datetime.now()
+        t_delta = datetime.datetime.combine(t_curr.date(), t_curr.time()) - datetime.datetime.combine(
+            t_curr.date(), plan_time)
+        return t_delta < self.allowed_interval
 
     # running after completion must return to PLANNED state
     def end_branch(self, branch_list):
